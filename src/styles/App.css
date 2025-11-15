@@ -45,3 +45,28 @@
   --transition-fast: 150ms ease;
   --transition-medium: 300ms ease;
 }
+
+/* ----- Dark Mode ----- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0D1B2A;
+    /* Deep petroleum */
+    --color-primary: #1C3A6D;
+    /* Same deep blue */
+    --color-accent: #BFA76A;
+    /* Softer gold */
+    --color-text: #F5F5F5;
+    --color-text-secondary: #CCCCCC;
+    --color-card-bg: #1C2635;
+  }
+}
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  line-height: 1.6;
+}
