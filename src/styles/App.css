@@ -1,42 +1,47 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+:root {
+  /* ----- Color Palette (Light Mode) ----- */
+  --color-bg: #E7ECF8;
+  /* Marian light blue */
+  --color-primary: #1C3A6D;
+  /* Deep blue */
+  --color-accent: #C8A45C;
+  /* Warm gold */
+  --color-text: #1A1A1A;
+  /* Primary text */
+  --color-text-secondary: #444444;
+  --color-card-bg: #FFFFFF;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+  /* ----- Spacing System ----- */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 3rem;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  /* ----- Border Radius ----- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 999px;
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+  /* ----- Typography ----- */
+  --font-family-base: "Inter", sans-serif;
+  --font-family-title: "Merriweather", serif;
 
-.card {
-  padding: 2em;
-}
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
 
-.read-the-docs {
-  color: #888;
+  /* ----- Shadows ----- */
+  --shadow-soft: 0 1px 4px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  /* ----- Transition ----- */
+  --transition-fast: 150ms ease;
+  --transition-medium: 300ms ease;
 }
