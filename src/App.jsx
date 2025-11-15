@@ -1,5 +1,6 @@
-import './styles/App.css'
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./components/LanguageSwitcher";
+import './styles/App.css';
 
 function App() {
   const { t } = useTranslation();
@@ -10,6 +11,8 @@ function App() {
         <h1>{t("home.title")}</h1>
         <button>{t("home.start")}</button>
       </div>
+
+      <LanguageSwitcher />
     </>
   )
 }
