@@ -1,9 +1,15 @@
 import './styles/App.css'
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation();
+
   return (
     <>
-      <h1>Rosary Guide</h1>
+      <div>
+        <h1>{t("home.title")}</h1>
+        <button>{t("home.start")}</button>
+      </div>
     </>
   )
 }
