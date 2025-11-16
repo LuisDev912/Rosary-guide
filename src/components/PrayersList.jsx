@@ -1,0 +1,14 @@
+/**
+PrayerList Component
+A component responsible for rendering all the main prayers of the Rosary.
+It uses the <Prayer /> component for each prayer.
+
+Responsibilities:
+- Load all prayer titles and texts from i18n.
+- Render each prayer in a structured and readable layout.
+- Provide a clear and accessible list of prayers for the user.
+
+Notes:
+- Acts as a controller/container for all prayer components.
+- Will later be styled using CSS Modules with a mobile-first approach.
+*/
