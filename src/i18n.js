@@ -1,5 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+// Import the JSON files 
 import en from "./locales/en.json";
 import es from "./locales/es.json";
 
@@ -8,13 +9,27 @@ i18n
     .init({
         resources: {
             en: { translation: en },
-            es: { translation: es }
+            es: { translation: es },
         },
-        lng: "es",            // default language
-        fallbackLng: "en",    // if it doesn't find a key
+
+        // Starts with Spanish
+        lng: "es",
+
+        // Supports these languages
+        supportedLngs: ["en", "es"],
+
+        // If it fails, the language is set to English
+        fallbackLng: "en",
+
+        // Avoids problems with React
         interpolation: {
-            escapeValue: false
-        }
+            escapeValue: false,
+        },
+
+        // Prevents console errors
+        react: {
+            useSuspense: false,
+        },
     });
 
 export default i18n;

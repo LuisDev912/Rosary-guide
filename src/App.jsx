@@ -9,7 +9,7 @@ function App() {
     <>
       <div>
         <h1>{t("home.title")}</h1>
-        <button>{t("home.start")}</button>
+        <button>{t("home.startButton")}</button>
       </div>
 
       <LanguageSwitcher />
