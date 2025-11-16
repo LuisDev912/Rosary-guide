@@ -3,13 +3,23 @@ import { initReactI18next } from "react-i18next";
 // Import the JSON files 
 import en from "./locales/en/en.json";
 import es from "./locales/es/es.json";
+import enRosary from "./locales/en/rosary.json";
+import esRosary from "./locales/es/rosary.json";
 
 i18n
     .use(initReactI18next)
     .init({
         resources: {
-            en: { translation: en },
-            es: { translation: es },
+            en: {
+                translation: {
+                    ...en,
+                    rosary: enRosary
+            } },
+            es: {
+                translation: {
+                    ...es,
+                    rosary: esRosary
+            } },
         },
 
         // Starts with Spanish
