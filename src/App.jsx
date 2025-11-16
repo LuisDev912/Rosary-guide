@@ -4,6 +4,7 @@ import './styles/App.css';
 
 function App() {
   const { t } = useTranslation();
+  const mysteries = t("mysteries.list", { returnObjects: true });
 
   return (
     <>
@@ -13,6 +14,15 @@ function App() {
       </div>
 
       <LanguageSwitcher />
+
+      <div className="languageTest">
+        <h2>{t("mysteries.title")}</h2>
+        <ul>
+          {mysteries.map((m, idx) => (
+            <li key={idx}>{m}</li>
+          ))}
+        </ul>
+      </div>
     </>
   )
 }

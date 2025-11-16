@@ -49,9 +49,11 @@
     },
     "mysteries": {
         "title": "Holy Rosary mysteries",
-        "joyful": "Joyful Mysteries",
-        "sorrowful": "Sorrowful Mysteries",
-        "glorious": "Glorious Mysteries",
-        "luminous": "Luminous Mysteries"
+        "list": [
+            "Joyful Mysteries",
+            "Sorrowful Mysteries",
+            "Glorious Mysteries",
+            "Luminous Mysteries"
+        ]
     }
 }

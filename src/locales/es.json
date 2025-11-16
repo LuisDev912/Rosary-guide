@@ -58,10 +58,11 @@
 
     "mysteries": {
     "title": "Misterios del Rosario",
-
-    "joyful": "Misterios Gozosos",
-    "sorrowful": "Misterios Dolorosos",
-    "glorious": "Misterios Gloriosos",
-    "luminous": "Misterios Luminosos"
+    "list": [
+        "Misterios Gozosos",
+        "Misterios Dolorosos",
+        "Misterios Gloriosos",
+        "Misterios Luminosos"
+    ]
     }
 }
