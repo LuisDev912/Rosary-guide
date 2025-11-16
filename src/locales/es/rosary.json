@@ -1,0 +1,86 @@
+{
+    "overview": {
+        "title": "Cómo Rezar el Santo Rosario",
+        "intro": "El Santo Rosario es una oración meditativa que nos guía a través de la vida de Jesús y María."
+    },
+    "steps": {
+        "title": "Pasos del Rosario",
+        "list": [
+            "Hacer la Señal de la Cruz.",
+            "Rezar el Credo de los Apóstoles.",
+            "Rezar el Padrenuestro.",
+            "Rezar tres Avemarías.",
+            "Rezar el Gloria.",
+            "Anunciar el Primer Misterio y rezar el Padrenuestro.",
+            "Rezar diez Avemarías mientras se medita el Misterio.",
+            "Repetir para los cinco Misterios.",
+            "Terminar con la Salve."
+        ]
+    },
+    "mysteries": {
+        "title": "Misterios del Santo Rosario",
+        "joyful": {
+            "title": "Misterios Gozosos (lunes y sábado)",
+            "list": [
+                "La Anunciación",
+                "La Visitación",
+                "El Nacimiento de Jesús",
+                "La Presentación de Jesús en el templo",
+                "El Niño Perdido y Hallado en el Templo"
+            ]
+        },
+        "sorrowful": {
+            "title": "Misterios Dolorosos (martes y viernes)",
+            "list": [
+                "La Oración en el Huerto",
+                "La Flagelación del Señor",
+                "La Coronación de Espinas",
+                "Jesús con la Cruz a cuestas",
+                "La Crucifixión"
+            ]
+        },
+        "glorious": {
+            "title": "Misterios Gloriosos (miércoles y domingo)",
+            "list": [
+                "La Resurrección",
+                "La Ascensión",
+                "La Venida del Espíritu Santo",
+                "La Asunción de María",
+                "La Coronación de María"
+            ]
+        },
+        "luminous": {
+            "title": "Misterios Luminosos (jueves)",
+            "list": [
+                "El Bautismo en el Jordán",
+                "Las Bodas de Caná",
+                "El Anuncio del Reino de Dios",
+                "La Transfiguración",
+                "La Institución de la Eucaristía"
+            ]
+        }
+    },
+    "prayers": {
+        "title": "Oraciones Principales",
+        "apostlesCreed": {
+            "title": "Credo de los Apóstoles",
+            "text": "Creo en Dios, Padre todopoderoso, Creador del Cielo y la Tierra; creo en Jesucristo, su único Hijo Nuestro Señor, que fue concebido por obra y gracia del Espíritu Santo, nació de Santa María VIrgen, padeció bajo el poder de Poncio Pilatos, fue crucificado, muerto y sepultado. Descendió a los infiernos, al tercer día resucitó de entre los muertos, subió al Cielo y está sentado a la derecha de Dios Padre, todopoderoso; desde allí va a venir a juzgar a vivos y muertos. Creo en el Espíritu Santo, la Santa Iglesia Católica, la comunión de los santos, el perdón de los pecados, la resurrección de la carne y la vida eterna. Amén."
+        },
+        "ourFather": {
+            "title": "Padrenuestro",
+            "text": "Padre Nuestro, que estás en en cielo, santificado sea Tu nombre. Venga a nosotros tu Reino. Hágase Señor tu Voluntad, hacia en la Tierra como en el Cielo. Danos hoy nuestro Pan de cada día, perdona nuestras ofensas, como también nosotros perdonamos a los que nos ofenden. No nos dejes caer en tentación, y líbranos de todo mal. Amén."
+        },
+        "hailMary": {
+            "title": "Avemaría",
+            "text": "Dios te salve María, llena eres de Gracia, el Señor es contigo. Bendita eres entre todas las mujeres, y bendito es el fruto de tu vientre, Jesús. Santa María, Madre de Dios, ruega Señora por nosotros los pecadores ahora y en la hora de nuestra muerte. Amén."
+        },
+        "gloryBe": {
+            "title": "Gloria",
+            "text": "Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en un principio, ahora y siempre, y por los siglos de los siglos. Amén."
+        },
+        "hailHolyQueen": {
+            "title": "Salve",
+            "text": "Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra. Dios te salve. A ti clamamos los desterrados hijos de Eva. A ti suspiramos gimiendo y llorando en este valle de lágrimas. Ea, pues, Señora, abogada nuestra: vuelve a nosotros esos tus ojos misericordiosos. Y después de este destierro, muéstranos a Jesús, fruto bendito de tu vientre. ¡Oh clemente, oh piadosa, oh dulce siempre Virgen María! Ruega por nosotros, Santa Madre de Dios, para que seamos dignos de las promesas de Jesucristo Nuestro Señor. Amén."
+        }
+    }
+}
