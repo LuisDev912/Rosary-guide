@@ -12,3 +12,20 @@ Notes:
 - Useful for rendering prayers individually or inside a collection.
 - Styling will later ensure readability and accessibility.
 */
+
+function Prayer({ title, text }) {
+    if (!title || !text) return null;
+
+    return (
+        <section>
+            <h3>{title}</h3>
+
+            {/* supports line breaks */}
+            {text.split("\n").map((line, idx) => (
+                <p key={idx}>{line}</p>
+            ))}
+        </section>
+    );
+}
+
+export default Prayer;

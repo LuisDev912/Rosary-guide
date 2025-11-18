@@ -4,6 +4,7 @@ import Steps from "./components/Steps";
 import "./components/MysteryGroup";
 import './styles/App.css';
 import Mysteries from "./components/Mysteries";
+import PrayerList from "./components/PrayersList";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Steps />
 
       <Mysteries />
+      <PrayerList />
 
 
       <LanguageSwitcher />

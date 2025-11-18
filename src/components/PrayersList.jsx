@@ -12,3 +12,24 @@ Notes:
 - Acts as a controller/container for all prayer components.
 - Will later be styled using CSS Modules with a mobile-first approach.
 */
+
+import { useTranslation } from "react-i18next";
+import Prayer from "./Prayer";
+
+export default function PrayerList() {
+    const { t } = useTranslation();
+    const prayers = t("rosary.prayers", { returnObjects: true });
+
+    return (
+        <div>
+            <h2>{t("rosary.prayersTitle")}</h2>
+            {Object.entries(prayers).map(([key, prayer]) => (
+                <Prayer
+                    key={key}
+                    title={prayer.title}
+                    text={prayer.text}
+                />
+            ))}
+        </div>
+    );
+}
