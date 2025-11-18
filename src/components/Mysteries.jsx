@@ -12,3 +12,43 @@ Notes:
 - This acts as a container/grouping component.
 - The structure is built for clarity, scalability, and accessibility.
 */
+
+import { useTranslation } from "react-i18next";
+import MysteryGroup from "./MysteryGroup";
+
+function Mysteries() {
+    const { t } = useTranslation();
+
+    return (
+        <section>
+            {/* Título general */}
+            <h1>{t("rosary.mysteries.title")}</h1>
+
+            {/* Joyful */}
+            <MysteryGroup
+                title={t("rosary.mysteries.joyful.title")}
+                items={t("rosary.mysteries.joyful.list", { returnObjects: true })}
+            />
+
+            {/* Sorrowful */}
+            <MysteryGroup
+                title={t("rosary.mysteries.sorrowful.title")}
+                items={t("rosary.mysteries.sorrowful.list", { returnObjects: true })}
+            />
+
+            {/* Glorious */}
+            <MysteryGroup
+                title={t("rosary.mysteries.glorious.title")}
+                items={t("rosary.mysteries.glorious.list", { returnObjects: true })}
+            />
+
+            {/* Luminous */}
+            <MysteryGroup
+                title={t("rosary.mysteries.luminous.title")}
+                items={t("rosary.mysteries.luminous.list", { returnObjects: true })}
+            />
+        </section>
+    );
+}
+
+export default Mysteries;

@@ -3,7 +3,8 @@ import LanguageSwitcher from "./components/LanguageSwitcher";
 import Steps from "./components/Steps";
 import "./components/MysteryGroup";
 import './styles/App.css';
-import MysteryGroup from "./components/MysteryGroup";
+import Mysteries from "./components/Mysteries";
+
 
 function App() {
   const { t } = useTranslation();
@@ -17,10 +18,7 @@ function App() {
 
       <Steps />
 
-      <MysteryGroup
-        title={t("rosary.mysteries.joyful.title")}
-        items={t("rosary.mysteries.joyful.list", { returnObjects: true })}
-      />
+      <Mysteries />
 
 
       <LanguageSwitcher />
