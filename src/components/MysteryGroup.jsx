@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 /**
 MysteryGroup Component
 
@@ -12,3 +14,22 @@ Notes:
 - This component is intentionally generic so it can be reused four times inside the main Mysteries component.
 - Future responsive styling will be added through CSS Modules.
 */
+
+function MysteryGroup({title, items}) {
+    const { t } = useTranslation();
+
+    return (
+        <>
+            <h2>{t(title)}</h2>
+            <div className="MysteriesGroup">
+                <ol>
+                    {items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                </ol>
+            </div>
+        </>
+    );
+};
+
+export default MysteryGroup;
