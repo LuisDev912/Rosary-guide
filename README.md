@@ -26,28 +26,31 @@ Built with React + Vite, fully responsive and designed for clarity and simplicit
 
 ## Project Structure
 
+```
 src/
 ├─ components/
 ├─ pages/
 ├─ locales/
 ├─ assets/
 ├─ styles/
-
+```
 ---
 
 ## Getting Started
 
-git clone [https://github.com/your-user/Rosary-guide](https://github.com/LuisDev912/Rosary-guide)
+```bash
+git clone https://github.com/LuisDev912/Rosary-guide
 cd Rosary-guide
 npm install
-npm run dev
+npm run dev 
+```
 
 ---
 
 ## Available Languages
 
-- Español
-- English
+- Español 🇪🇸
+- English 🇬🇧
 
 ---
 
