@@ -17,15 +17,15 @@ Notes:
 
 function MysteryGroup({title, items}) {
     const { t } = useTranslation();
-
     return (
         <>
             <h2>{t(title)}</h2>
             <div className="MysteriesGroup">
                 <ol>
-                    {items.map((item, index) => (
+                    
+                    {items?.map((item, index) => (
                         <li key={index}>{item}</li>
-                    ))}
+                    ))} 
                 </ol>
             </div>
         </>

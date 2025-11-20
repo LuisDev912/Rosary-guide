@@ -16,7 +16,7 @@ Notes:
 import { useTranslation } from "react-i18next";
 import Prayer from "./Prayer";
 
-export default function PrayerList() {
+function PrayerList() {
     const { t } = useTranslation();
     const prayers = t("rosary.prayers", { returnObjects: true });
 
@@ -33,3 +33,5 @@ export default function PrayerList() {
         </div>
     );
 }
+
+export default PrayerList;

@@ -1,10 +1,7 @@
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./components/LanguageSwitcher";
-import Steps from "./components/Steps";
-import "./components/MysteryGroup";
 import './styles/App.css';
-import Mysteries from "./components/Mysteries";
-import PrayerList from "./components/PrayersList";
+import RosaryPage from "./pages/RosaryPage.jsx";
 
 
 function App() {
@@ -17,13 +14,9 @@ function App() {
         <button>{t("home.startButton")}</button>
       </div>
 
-      <Steps />
-
-      <Mysteries />
-      <PrayerList />
-
-
       <LanguageSwitcher />
+
+      <RosaryPage />
     </>
   )
 }

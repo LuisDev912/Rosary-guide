@@ -1,3 +1,8 @@
+import Mysteries from "../components/Mysteries";
+import PrayerList from "../components/PrayersList";
+import Steps from "../components/Steps";
+import MysteryGroup from "../components/MysteryGroup";
+
 /**
 * RosaryPage.jsx
 * 
@@ -17,3 +22,17 @@
 * - Styling and routing can be added later as the project grows.
 * - The logic here ensures that App.jsx can stay clean and minimal.
 */
+
+
+function RosaryPage() {
+    return (
+        <div>
+            <Steps />
+            <Mysteries />
+            <PrayerList />
+            <MysteryGroup />
+        </div>
+    );
+}
+
+export default RosaryPage;
