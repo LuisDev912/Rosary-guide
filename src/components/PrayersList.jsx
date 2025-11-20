@@ -22,7 +22,7 @@ function PrayerList() {
 
     return (
         <div>
-            <h2>{t("rosary.prayersTitle")}</h2>
+            <h2>{t("rosary.prayers.title")}</h2>
             {Object.entries(prayers).map(([key, prayer]) => (
                 <Prayer
                     key={key}
