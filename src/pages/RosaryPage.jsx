@@ -25,13 +25,28 @@ import MysteryGroup from "../components/MysteryGroup";
 
 
 function RosaryPage() {
+    const MysteryDayByDay = {
+        0: "glorious",
+        1: "joyful",
+        2: "sorrowful",
+        3: "glorious",
+        4: "luminous",
+        5: "sorrowful",
+        6: "joyful"
+    };
+
+    const today = new Date().getDay(); // choses the current day of the week 0-6
+    const todayMystery = MysteryDayByDay[today];
     return (
-        <div>
-            <Steps />
-            <Mysteries />
-            <PrayerList />
-            <MysteryGroup />
-        </div>
+        <>
+            <div> 
+                <Steps />
+                <Mysteries />
+                <PrayerList />
+                <MysteryGroup />
+            </div>
+            <h1>Today's Mystery: { todayMystery}</h1>
+        </>
     );
 }
 
