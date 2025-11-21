@@ -39,14 +39,21 @@ function RosaryPage() {
 
     const today = new Date().getDay(); // choses the current day of the week 0-6
     const todayMysteryGroup = MysteryDayByDay[today];
-    const allMysteryGroups = t("mysteries.groups", { returnObjects: true });
-    const todayMysteries = allMysteryGroups[todayMysteryGroup];
-
+    const allMysteryGroups = t("mysteries", { returnObjects: true });
+    
     const [currentMysteryIndex, setCurrentMysteryIndex] = useState(0);
+
+    const realGroups = useMemo(() => {
+        const { title, ...groups } = allMysteryGroups;
+        return groups;
+    }, [allMysteryGroups]); // exclude the title property because I won't need it here
+
+    const todayMysteries = realGroups[todayMysteryGroup];
 
     const currentMystery = useMemo(() => {
         return todayMysteries?.mysteries?.[currentMysteryIndex] || null;
     }, [todayMysteries, currentMysteryIndex]);
+
     return (
         <>
             <div className="Rosary-page">
