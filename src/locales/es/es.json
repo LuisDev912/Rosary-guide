@@ -5,64 +5,10 @@
     "startButton": "Comenzar",
     "languageLabel": "Idioma"
     },
-
-    "steps": {
-    "title": "Cómo rezar el Rosario",
-    "intro": "El Santo Rosario es una oración meditativa centrada en la vida de Jesús y María. Sigue estos pasos básicos:",
-    "list": {
-        "1": "Haz la Señal de la Cruz y reza el Credo.",
-        "2": "Reza un Padrenuestro.",
-        "3": "Reza tres Avemarías por la fe, esperanza y caridad.",
-        "4": "Reza un Gloria.",
-        "5": "Anuncia el primer misterio y reza un Padrenuestro.",
-        "6": "Reza diez Avemarías mientras meditas en el misterio.",
-        "7": "Reza un Gloria.",
-        "8": "Repite el mismo esquema para los cinco misterios.",
-        "9": "Al finalizar, reza la Salve u otra oración mariana."
-    }
+    "buttons": {
+        "nextMystery": "Siguiente Misterio"
     },
-
-    "prayers": {
-    "title": "Oraciones del Rosario",
-
-    "signOfCross": {
-        "title": "Señal de la Cruz",
-        "text": "En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén."
-    },
-
-    "creed": {
-        "title": "Credo Apostólico",
-        "text": "Creo en Dios, Padre todopoderoso, creador del cielo y de la tierra..."
-    },
-
-    "ourFather": {
-        "title": "Padrenuestro",
-        "text": "Padre nuestro, que estás en el cielo, santificado sea tu Nombre..."
-    },
-
-    "hailMary": {
-        "title": "Avemaría",
-        "text": "Dios te salve, María, llena eres de gracia; el Señor es contigo..."
-    },
-
-    "gloryBe": {
-        "title": "Gloria",
-        "text": "Gloria al Padre, y al Hijo, y al Espíritu Santo..."
-    },
-
-    "hailHolyQueen": {
-        "title": "Salve",
-        "text": "Dios te salve, Reina y Madre de misericordia..."
-    }
-    },
-
-    "mysteries": {
-    "title": "Misterios del Rosario",
-    "list": [
-        "Misterios Gozosos",
-        "Misterios Dolorosos",
-        "Misterios Gloriosos",
-        "Misterios Luminosos"
-    ]
+    "labels": {
+        "currentMystery": "Misterio Actual"
     }
 }
