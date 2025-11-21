@@ -2,6 +2,8 @@ import Mysteries from "../components/Mysteries";
 import PrayerList from "../components/PrayersList";
 import Steps from "../components/Steps";
 import MysteryGroup from "../components/MysteryGroup";
+import { useTranslation } from "react-i18next";
+import { useMemo, useState } from "react";
 
 /**
 * RosaryPage.jsx
@@ -25,6 +27,8 @@ import MysteryGroup from "../components/MysteryGroup";
 
 
 function RosaryPage() {
+    const { t } = useTranslation();
+
     const MysteryDayByDay = {
         0: "glorious",
         1: "joyful",
@@ -36,7 +40,15 @@ function RosaryPage() {
     };
 
     const today = new Date().getDay(); // choses the current day of the week 0-6
-    const todayMystery = MysteryDayByDay[today];
+    const todayMysteryGroup = MysteryDayByDay[today];
+    const allMysteryGroups = t("mysteries.groups", { returnObjects: true });
+    const todayMysteries = allMysteryGroups[todayMysteryGroup];
+
+    const [currentMysteryIndex, setCurrentMysteryIndex] = useState(0);
+
+    const currentMystery = useMemo(() => {
+        return todayMysteries?.Mysteries?.[currentMysteryIndex] || null;
+    }, [todayMysteries, currentMysteryIndex]);
     return (
         <>
             <div> 
@@ -45,7 +57,6 @@ function RosaryPage() {
                 <PrayerList />
                 <MysteryGroup />
             </div>
-            <h1>Today's Mystery: { todayMystery}</h1>
         </>
     );
 }
