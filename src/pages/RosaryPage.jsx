@@ -1,5 +1,5 @@
-import Mysteries from "../components/Mysteries";
 import Steps from "../components/Steps";
+import MysteryGroup from "../components/MysteryGroup";
 import { useTranslation } from "react-i18next";
 import { useMemo, useState } from "react";
 
@@ -51,7 +51,7 @@ function RosaryPage() {
     const todayMysteries = realGroups[todayMysteryGroup];
 
     const currentMystery = useMemo(() => {
-        return todayMysteries?.mysteries?.[currentMysteryIndex] || null;
+        return todayMysteries?.list?.[currentMysteryIndex] || null;
     }, [todayMysteries, currentMysteryIndex]);
 
     return (
@@ -61,22 +61,25 @@ function RosaryPage() {
 
                 {/* show the Steps component to guide through the Rosary */}
                 <section className="Rosary-steps">
-                    <h2>{t("rosary.steps.title")}</h2>
+                    <h2>{t("steps.title")}</h2>
                     <Steps/>
                 </section>
 
                 {/* show the Mysteries of the current day */}
                 <section className="Mysteries-of-the-day">
-                    <h2>{t("rosary.mysteries.title")}</h2>
-                    <Mysteries groupKey={todayMysteryGroup} />
-                    
+                    <h2>{t("mysteries.title")}</h2>
+                    <MysteryGroup
+                        title={t(`mysteries.${todayMysteryGroup}.title`)}
+                        items={todayMysteries.list}
+                    />
                 </section>
+
 
                 {/* control buttons  */}
                 <section className="Mystery-controls">
                     <button onClick={() => {
                         setCurrentMysteryIndex((prev) => 
-                        prev < todayMysteries.mysteries.length - 1 ? prev + 1 : prev)
+                        prev < todayMysteries.list.length - 1 ? prev + 1 : prev)
                     }}>
                         {t("buttons.nextMystery")}
                     </button>

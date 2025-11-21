@@ -13,12 +13,12 @@ i18n
             en: {
                 translation: {
                     ...en,
-                    rosary: enRosary
+                    ...enRosary
             } },
             es: {
                 translation: {
                     ...es,
-                    rosary: esRosary
+                    ...esRosary
             } },
         },
 

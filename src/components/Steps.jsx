@@ -15,7 +15,7 @@ import { useTranslation } from "react-i18next";
 
 function Steps() {
     const { t } = useTranslation();
-    const steps = t("rosary.steps.list", { returnObjects: true });
+    const steps = t("steps.list", { returnObjects: true });
 
     
     return (
