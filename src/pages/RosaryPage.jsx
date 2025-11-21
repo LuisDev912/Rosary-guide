@@ -51,11 +51,20 @@ function RosaryPage() {
     }, [todayMysteries, currentMysteryIndex]);
     return (
         <>
-            <div> 
-                <Steps />
-                <Mysteries />
-                <PrayerList />
-                <MysteryGroup />
+            <div className="Rosary-page">
+                <h1>{t("home.title")}</h1>
+
+                {/* show the Mysteries of the current day */}
+                <section className="Mysteries-of-the-day">
+                    <h2>{t("mysteries.title")}</h2>
+                    <Mysteries />
+                </section>
+
+                {/* show the Steps component to guide through the Rosary */}
+                <section className="Rosary-steps">
+                    <h2>{t("steps.title")}</h2>
+                    <Steps/>
+                </section>
             </div>
         </>
     );

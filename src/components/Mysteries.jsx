@@ -21,9 +21,6 @@ function Mysteries() {
 
     return (
         <section>
-            {/* Título general */}
-            <h1>{t("rosary.mysteries.title")}</h1>
-
             {/* Joyful */}
             <MysteryGroup
                 title={t("rosary.mysteries.joyful.title")}
