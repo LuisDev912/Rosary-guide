@@ -84,21 +84,20 @@ function RosaryPage() {
                     </div>
 
                     <div className="control-buttons">
-                        <button className="next-mystery" onClick={() => {
-                            setCurrentMysteryIndex((prev) => 
-                            prev < todayMysteries.list.length - 1 ? prev + 1 : prev)
-                        }}>
-                        {t("buttons.nextMystery")}
-                        </button>
-                        
                         <button className="previous-mystery" onClick={() => {
                             setCurrentMysteryIndex((prev) => 
                             prev > 0 ? prev - 1 : prev)
                         }}>
                         {t("buttons.previousMystery")}
                         </button>
+
+                        <button className="next-mystery" onClick={() => {
+                            setCurrentMysteryIndex((prev) => 
+                            prev < todayMysteries.list.length - 1 ? prev + 1 : prev)
+                        }}>
+                        {t("buttons.nextMystery")}
+                        </button>
                     </div>
-                    
                 </section>
             </div>
         </>
