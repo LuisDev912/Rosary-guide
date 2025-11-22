@@ -6,7 +6,8 @@
         "languageLabel": "Language"
     },
     "buttons": {
-        "nextMystery": "Next Mystery"
+        "nextMystery": "Next Mystery",
+        "previousMystery": "Previous Mystery"
     },
     "labels": {
         "currentMystery": "Current Mystery"

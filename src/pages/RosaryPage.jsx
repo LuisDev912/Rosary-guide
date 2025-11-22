@@ -78,17 +78,27 @@ function RosaryPage() {
 
                 {/* control buttons  */}
                 <section className="Mystery-controls">
-                    <button onClick={() => {
-                        setCurrentMysteryIndex((prev) => 
-                        prev < todayMysteries.list.length - 1 ? prev + 1 : prev)
-                    }}>
-                        {t("buttons.nextMystery")}
-                    </button>
-
-                    <div>
+                    <div className="current-mystery">
                         <strong>{t("labels.currentMystery")}:</strong>
                         <CurrentMystery selectedMystery={Mystery} />
                     </div>
+
+                    <div className="control-buttons">
+                        <button className="next-mystery" onClick={() => {
+                            setCurrentMysteryIndex((prev) => 
+                            prev < todayMysteries.list.length - 1 ? prev + 1 : prev)
+                        }}>
+                        {t("buttons.nextMystery")}
+                        </button>
+                        
+                        <button className="previous-mystery" onClick={() => {
+                            setCurrentMysteryIndex((prev) => 
+                            prev > 0 ? prev - 1 : prev)
+                        }}>
+                        {t("buttons.previousMystery")}
+                        </button>
+                    </div>
+                    
                 </section>
             </div>
         </>
