@@ -7,16 +7,26 @@ import RosaryPage from "./pages/RosaryPage.jsx";
 function App() {
   const { t } = useTranslation();
 
+  const handleStartPrayer = () => {
+    const mainContent = document.querySelector('.main-content');
+    if (mainContent) {
+      mainContent.style.display = 'block';
+    }
+  }
+
   return (
     <>
       <div>
         <h1>{t("home.title")}</h1>
-        <button>{t("home.startButton")}</button>
+        <button className="start-prayer" onClick={handleStartPrayer}>{t("home.startButton")}</button>
       </div>
 
       <LanguageSwitcher />
 
-      <RosaryPage />
+      <div className="main-content" style={{display: 'none'}}> 
+        <RosaryPage />
+      </div>
+      
     </>
   )
 }
