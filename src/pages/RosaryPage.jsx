@@ -1,5 +1,6 @@
 import Steps from "../components/Steps";
 import MysteryGroup from "../components/MysteryGroup";
+import CurrentMystery from "../components/CurrentMystery";
 import { useTranslation } from "react-i18next";
 import { useMemo, useState } from "react";
 
@@ -84,9 +85,10 @@ function RosaryPage() {
                         {t("buttons.nextMystery")}
                     </button>
 
-                    <p>
-                        <strong>{t("labels.currentMystery")}:</strong>{" "}{currentMystery?.title}
-                    </p>
+                    <div>
+                        <strong>{t("labels.currentMystery")}:</strong>
+                        <CurrentMystery currentMystery={currentMystery} />
+                    </div>
                 </section>
             </div>
         </>
