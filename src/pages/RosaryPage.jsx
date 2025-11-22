@@ -51,7 +51,7 @@ function RosaryPage() {
 
     const todayMysteries = realGroups[todayMysteryGroup];
 
-    const currentMystery = useMemo(() => {
+    const Mystery = useMemo(() => {
         return todayMysteries?.list?.[currentMysteryIndex] || null;
     }, [todayMysteries, currentMysteryIndex]);
 
@@ -87,7 +87,7 @@ function RosaryPage() {
 
                     <div>
                         <strong>{t("labels.currentMystery")}:</strong>
-                        <CurrentMystery currentMystery={currentMystery} />
+                        <CurrentMystery selectedMystery={Mystery} />
                     </div>
                 </section>
             </div>

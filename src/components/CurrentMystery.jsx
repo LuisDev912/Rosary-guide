@@ -1,11 +1,7 @@
-function CurrentMystery({ currentMystery }) { 
-    if (!currentMystery) return null;
+function CurrentMystery({ selectedMystery }) { 
+    if (!selectedMystery) return null;
 
-    return (
-        <div className="Current-mystery">
-            <h3>{currentMystery}</h3>
-        </div>
-    );
+    return <p>{selectedMystery}</p>;
 }
 
 export default CurrentMystery;
