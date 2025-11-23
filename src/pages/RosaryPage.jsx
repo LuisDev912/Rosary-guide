@@ -69,12 +69,9 @@ function RosaryPage() {
                     />
                 </section>
 
-
                 {/* control buttons  */}
                 <section className="Mystery-controls">
-                    <div className="control-buttons">
-                        <RosaryRunner mysteries={todayMysteries.list} />
-                    </div>
+                    <RosaryRunner mysteries={todayMysteries.list} />
                 </section>
             </div>
         </>

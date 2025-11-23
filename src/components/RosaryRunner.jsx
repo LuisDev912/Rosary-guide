@@ -18,29 +18,35 @@ function RosaryRunner({ mysteries }) {
     const [currentMysteryIndex, setCurrentMysteryIndex] = useState(0);
 
     const currentMystery = useMemo(() => {
-        return mysteries?.list?.[currentMysteryIndex] || null;
+        return mysteries?.[currentMysteryIndex] ?? null;
     }, [mysteries, currentMysteryIndex]);
 
     const goPrevious = () => {
         setCurrentMysteryIndex((prev) => 
-        prev < mysteries.length - 1 ? prev + 1 : prev);
+            prev > 0 ? prev - 1 : prev);
     }
 
     const goNext = () => {
         setCurrentMysteryIndex((prev) => 
-        prev > 0 ? prev - 1 : prev);
+            prev < mysteries.length - 1 ? prev + 1 : prev);
     }
 
     return (
         <section className="Rosary-runner">
-            <CurrentMystery selectedMystery={currentMystery} />
-            <button className="previous-mystery" onClick={() => goPrevious()}>
-                {t("buttons.previousMystery")}
-            </button>
+            <div className="current-mystery">
+                <strong>{t("labels.currentMystery")}:</strong>
+                <CurrentMystery selectedMystery={currentMystery} />
+            </div>
 
-            <button className="next-mystery" onClick={() => goNext()}>
-                {t("buttons.nextMystery")}
-            </button>
+            <div className="control-buttons">
+                <button className="previous-mystery" onClick={() => goPrevious()}>
+                    {t("buttons.previousMystery")}
+                </button>
+
+                <button className="next-mystery" onClick={() => goNext()}>
+                    {t("buttons.nextMystery")}
+                </button>
+            </div>
         </section>
     );
 
