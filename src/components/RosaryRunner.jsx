@@ -39,11 +39,16 @@ function RosaryRunner({ mysteries }) {
             </div>
 
             <div className="control-buttons">
-                <button className="previous-mystery" onClick={() => goPrevious()}>
+                <button className="previous-mystery"
+                    onClick={() => goPrevious()}
+                    disabled={currentMysteryIndex === 0}
+                >
                     {t("buttons.previousMystery")}
                 </button>
 
-                <button className="next-mystery" onClick={() => goNext()}>
+                <button className="next-mystery"
+                    onClick={() => goNext()}
+                    disabled={currentMysteryIndex === 4}>
                     {t("buttons.nextMystery")}
                 </button>
             </div>
