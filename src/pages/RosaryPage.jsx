@@ -1,8 +1,8 @@
 import Steps from "../components/Steps";
 import MysteryGroup from "../components/MysteryGroup";
-import CurrentMystery from "../components/CurrentMystery";
+import RosaryRunner from "../components/RosaryRunner";
 import { useTranslation } from "react-i18next";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 
 /**
 * RosaryPage.jsx
@@ -41,8 +41,6 @@ function RosaryPage() {
     const today = new Date().getDay(); // choses the current day of the week 0-6
     const todayMysteryGroup = MysteryDayByDay[today];
     const allMysteryGroups = t("mysteries", { returnObjects: true });
-    
-    const [currentMysteryIndex, setCurrentMysteryIndex] = useState(0);
 
     const realGroups = useMemo(() => {
         const { title, ...groups } = allMysteryGroups;
@@ -50,10 +48,6 @@ function RosaryPage() {
     }, [allMysteryGroups]); // exclude the title property because I won't need it here
 
     const todayMysteries = realGroups[todayMysteryGroup];
-
-    const Mystery = useMemo(() => {
-        return todayMysteries?.list?.[currentMysteryIndex] || null;
-    }, [todayMysteries, currentMysteryIndex]);
 
     return (
         <>
@@ -78,25 +72,8 @@ function RosaryPage() {
 
                 {/* control buttons  */}
                 <section className="Mystery-controls">
-                    <div className="current-mystery">
-                        <strong>{t("labels.currentMystery")}:</strong>
-                        <CurrentMystery selectedMystery={Mystery} />
-                    </div>
-
                     <div className="control-buttons">
-                        <button className="previous-mystery" onClick={() => {
-                            setCurrentMysteryIndex((prev) => 
-                            prev > 0 ? prev - 1 : prev)
-                        }}>
-                        {t("buttons.previousMystery")}
-                        </button>
-
-                        <button className="next-mystery" onClick={() => {
-                            setCurrentMysteryIndex((prev) => 
-                            prev < todayMysteries.list.length - 1 ? prev + 1 : prev)
-                        }}>
-                        {t("buttons.nextMystery")}
-                        </button>
+                        <RosaryRunner mysteries={todayMysteries.list} />
                     </div>
                 </section>
             </div>
