@@ -14,15 +14,25 @@ Notes:
 */
 
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import Prayer from "./Prayer";
 
 function PrayerList() {
     const { t } = useTranslation();
+    const [showAll, setShowAll] = useState(true);
     const prayers = t("prayers", { returnObjects: true });
+
+    const handleToggle = () => {
+        setShowAll(!showAll);
+    }
 
     return (
         <div>
-            <h2>{t("prayers.title")}</h2>
+            <div className="toggle-list">
+                <button onClick={handleToggle}>toggle</button>
+            </div>
+            <div className="test-div" style={{ display: showAll ? 'block' : 'none' }}>
+                <h2>{t("prayers.title")}</h2>
             {Object.entries(prayers).map(([key, prayer]) => (
                 <Prayer
                     key={key}
@@ -30,6 +40,7 @@ function PrayerList() {
                     text={prayer.text}
                 />
             ))}
+            </div>
         </div>
     );
 }
