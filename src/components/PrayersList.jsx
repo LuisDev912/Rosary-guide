@@ -18,11 +18,11 @@ import Prayer from "./Prayer";
 
 function PrayerList() {
     const { t } = useTranslation();
-    const prayers = t("rosary.prayers", { returnObjects: true });
+    const prayers = t("prayers", { returnObjects: true });
 
     return (
         <div>
-            <h2>{t("rosary.prayers.title")}</h2>
+            <h2>{t("prayers.title")}</h2>
             {Object.entries(prayers).map(([key, prayer]) => (
                 <Prayer
                     key={key}

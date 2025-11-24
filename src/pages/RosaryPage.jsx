@@ -1,6 +1,7 @@
 import Steps from "../components/Steps";
 import MysteryGroup from "../components/MysteryGroup";
 import RosaryRunner from "../components/RosaryRunner";
+import PrayersList from "../components/PrayersList";
 import { useTranslation } from "react-i18next";
 import { useMemo } from "react";
 
@@ -58,6 +59,11 @@ function RosaryPage() {
                     <h2>{t("steps.title")}</h2>
                     <Steps/>
                 </section>
+
+                <aside className="prayers-guide">
+                    <PrayersList />
+                    {/* Future feature: Add a toggle to show/hide this prayers list. Besides, it hasn't got styles yet */}
+                </aside>
 
                 {/* show the Mysteries of the current day */}
                 <section className="Mysteries-of-the-day">
