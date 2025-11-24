@@ -35,7 +35,8 @@ function RosaryRunner({ mysteries }) {
         <section className="Rosary-runner">
             <div className="current-mystery">
                 <strong>{t("labels.currentMystery")}:</strong>
-                <CurrentMystery selectedMystery={currentMystery} />
+                <CurrentMystery selectedMystery={currentMystery} /> 
+                <span>{currentMysteryIndex + 1} / 5</span>
             </div>
 
             <div className="control-buttons">
