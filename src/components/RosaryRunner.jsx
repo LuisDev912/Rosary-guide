@@ -55,7 +55,6 @@ function RosaryRunner({ mysteries }) {
             </div>
         </section>
     );
-
 }
 
 export default RosaryRunner;

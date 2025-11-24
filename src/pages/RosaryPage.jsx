@@ -52,7 +52,6 @@ function RosaryPage() {
     return (
         <>
             <div className="Rosary-page">
-                <h1>{t("home.title")}</h1>
 
                 {/* show the Steps component to guide through the Rosary */}
                 <section className="Rosary-steps">
