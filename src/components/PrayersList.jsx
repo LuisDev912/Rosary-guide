@@ -29,10 +29,12 @@ function PrayerList() {
     return (
         <div>
             <div className="toggle-list">
-                <button onClick={handleToggle}>toggle</button>
+                <button onClick={handleToggle}>{t("buttons.togglePrayers")}</button>
             </div>
-            <div className="test-div" style={{ display: showAll ? 'block' : 'none' }}>
+
+            <div className="prayers" style={{ display: showAll ? 'block' : 'none' }}>
                 <h2>{t("prayers.title")}</h2>
+
             {Object.entries(prayers).map(([key, prayer]) => (
                 <Prayer
                     key={key}

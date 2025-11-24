@@ -7,7 +7,8 @@
     },
     "buttons": {
         "nextMystery": "Next Mystery",
-        "previousMystery": "Previous Mystery"
+        "previousMystery": "Previous Mystery",
+        "togglePrayers": "Show/Hide Prayers"
     },
     "labels": {
         "currentMystery": "Current Mystery"
