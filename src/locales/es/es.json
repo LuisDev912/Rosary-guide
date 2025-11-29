@@ -13,5 +13,14 @@
     },
     "labels": {
         "currentMystery": "Misterio Actual"
+    }, 
+    "notFound": {
+        "title": "Oops, parece que la página que estabas buscando no existe.",
+        "alternatives": "Aquí hay algunas alternativas:",
+        "pages": [
+            "Página principal",
+            "Página del Rosario",
+            "Ir a la Oración Final"
+        ]
     }
 }
