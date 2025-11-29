@@ -8,7 +8,8 @@
     "buttons": {
         "nextMystery": "Next Mystery",
         "previousMystery": "Previous Mystery",
-        "togglePrayers": "Show/Hide Prayers"
+        "togglePrayers": "Show/Hide Prayers",
+        "endRosary": "Finish the Rosary"
     },
     "labels": {
         "currentMystery": "Current Mystery"

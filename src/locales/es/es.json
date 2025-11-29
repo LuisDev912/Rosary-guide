@@ -8,7 +8,8 @@
     "buttons": {
         "nextMystery": "Siguiente Misterio",
         "previousMystery": "Misterio Anterior",
-        "togglePrayers": "Mostrar/Ocultar Oraciones"
+        "togglePrayers": "Mostrar/Ocultar Oraciones",
+        "endRosary": "Finalizar el Rosario"
     },
     "labels": {
         "currentMystery": "Misterio Actual"
