@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import './styles/App.css';
-import RosaryPage from "./pages/RosaryPage.jsx";
+import { Route, Routes } from 'react-router';
+import RosaryPage from "./pages/RosaryPage.jsx"
+import RosaryEnd from "./pages/RosaryEnd";
 
 
 function App() {
@@ -26,7 +28,11 @@ function App() {
       <div className="main-content" style={{display: 'none'}}> 
         <RosaryPage />
       </div>
-      
+      <Routes>
+        <Route path="/" element={<RosaryPage />} />
+        <Route path="/end" element={<RosaryEnd />} />
+      </Routes>
+
     </>
   )
 }
