@@ -1,5 +1,3 @@
-import { useNavigate } from "react-router";
-
 /*
 * ./src/pages/RosaryEnd.jsx
 * This is a page where the user goes when he or she
@@ -11,10 +9,7 @@ import { useNavigate } from "react-router";
 * The user will be redirected here using React Router.
 */
 
-
 function RosaryEnd() {
-
     return <h1>Thanks for praying!</h1>
 }
-
 export default RosaryEnd;
