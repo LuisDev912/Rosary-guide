@@ -16,13 +16,23 @@ function RosaryEnd() {
         <main className="RosaryEnd-main">
             <h1>{t("end.title")}</h1>
 
-            <div className="prayer-reminder">
+            <section className="prayer-reminder">
                 <details>
                     <p>{t("prayers.hailHolyQueen.text")}</p>
                     <summary>{t("end.finalPrayerReminder")}
                     </summary>
                 </details>
-            </div>
+            </section>
+
+            <section className="custom-prayer">
+                <h2>{t("end.prayerQuestion")}</h2>
+
+                <textarea
+                    id="custom-prayer-input"
+                    rows="5"
+                    placeholder={t("end.prayerInputPlaceholder")}
+                />
+            </section>
         </main>
     );
 }
