@@ -15,6 +15,7 @@ is the component responsible for managing the progress
 */
 
 function RosaryRunner({ mysteries }) {
+    const navigate = useNavigate();
     const { t } = useTranslation();
     const [currentMysteryIndex, setCurrentMysteryIndex] = useState(0);
 
@@ -55,7 +56,9 @@ function RosaryRunner({ mysteries }) {
                 </button>
 
                 <button className="end-Rosary"
-                    disabled={currentMysteryIndex !== 4}>
+                    disabled={currentMysteryIndex !== 4}
+                    onClick={() => navigate('/Rosary/end')}
+                >
                     {t("buttons.endRosary")}
                 </button>
             </div>
