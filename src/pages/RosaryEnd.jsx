@@ -12,6 +12,18 @@ import { useTranslation } from "react-i18next";
 
 function RosaryEnd() {
     const { t } = useTranslation();
-    return <h1>{t("end.title")}</h1>
+    return (
+        <main className="RosaryEnd-main">
+            <h1>{t("end.title")}</h1>
+
+            <div className="prayer-reminder">
+                <details>
+                    <p>{t("prayers.hailHolyQueen.text")}</p>
+                    <summary>{t("end.finalPrayerReminder")}
+                    </summary>
+                </details>
+            </div>
+        </main>
+    );
 }
 export default RosaryEnd;

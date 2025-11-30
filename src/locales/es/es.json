@@ -26,6 +26,7 @@
     "end": {
         "title": "¡Gracias por orar!",
         "prayerQuestion": "¿Quieres crear tu propia oración?",
-        "prayerInputPlaceholder": "Ingresa tu oración"
+        "prayerInputPlaceholder": "Ingresa tu oración",
+        "finalPrayerReminder": "No olvides terminar con el Salve:"
     }
 }
