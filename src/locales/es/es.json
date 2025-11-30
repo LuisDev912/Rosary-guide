@@ -27,6 +27,8 @@
         "title": "¡Gracias por orar!",
         "prayerQuestion": "¿Quieres crear tu propia oración?",
         "prayerInputPlaceholder": "Ingresa tu oración",
-        "finalPrayerReminder": "No olvides terminar con el Salve:"
+        "finalPrayerReminder": "No olvides terminar con el Salve:",
+        "submitPrayer": "Guardar oración",
+        "yourPrayer": "Tu oración:"
     }
 }

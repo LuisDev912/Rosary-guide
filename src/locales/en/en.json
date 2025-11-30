@@ -27,6 +27,8 @@
         "title": "Thanks for praying!",
         "prayerQuestion": "Do you want to create your own prayer?",
         "prayerInputPlaceholder": "Enter your prayer",
-        "finalPrayerReminder": "Don't forget to finish with the Hail Holy Queen:"
+        "finalPrayerReminder": "Don't forget to finish with the Hail Holy Queen:",
+        "submitPrayer": "Submit prayer",
+        "yourPrayer": "Your prayer:"
     }
 }

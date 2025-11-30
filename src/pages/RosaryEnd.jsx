@@ -16,7 +16,8 @@ function RosaryEnd() {
     const [prayer, setPrayer] = useState("");
     const [isSubmitted, setSubmitted] = useState(false);
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         if (prayer.trim().length !== 0) setSubmitted(true)
     }
     return (
@@ -34,23 +35,30 @@ function RosaryEnd() {
             <section className="custom-prayer">
                 <h2>{t("end.prayerQuestion")}</h2>
 
-                <textarea
-                    id="custom-prayer-input"
-                    rows="6"
-                    placeholder={t("end.prayerInputPlaceholder")}
-                    value={prayer}
-                    onChange={(e) => setPrayer(e.target.value)}
-                />
+                <form onSubmit={handleSubmit}>
+                    <input
+                        type="text"
+                        id="custom-prayer-input"
+                        placeholder={t("end.prayerInputPlaceholder")}
+                        value={prayer}
+                        onChange={(e) => setPrayer(e.target.value)}
+                    />
 
-                <button
-                    className="submit-prayer-btn"
-                    onClick={handleSubmit}
-                    disabled={prayer.trim().length === 0}
-                >
-                    submit
-                </button>
-
-                <p>{prayer}</p>
+                    <button
+                        className="submit-prayer-btn"
+                        type="submit"
+                        disabled={prayer.trim().length === 0}
+                    >
+                        {t("end.submitPrayer")}
+                    </button>
+                </form>
+                
+                {isSubmitted && prayer.trim().length !== 0 && (
+                    <div className="submitted-prayer">
+                        <h3>{t("end.yourPrayer")}</h3>
+                        <p>{prayer}</p>
+                    </div>
+                )}
 
             </section>
         </main>
