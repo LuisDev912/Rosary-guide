@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 /*
 * ./src/pages/RosaryEnd.jsx
 * This is a page where the user goes when he or she
@@ -10,6 +11,7 @@
 */
 
 function RosaryEnd() {
-    return <h1>Thanks for praying!</h1>
+    const { t } = useTranslation();
+    return <h1>{t("end.title")}</h1>
 }
 export default RosaryEnd;

@@ -22,5 +22,10 @@
             "Rosary page",
             "Final Prayer"
         ]
+    },
+    "end": {
+        "title": "Thanks for praying!",
+        "prayerQuestion": "Do you want to create your own prayer?",
+        "prayerInputPlaceholder": "Enter your prayer"
     }
 }

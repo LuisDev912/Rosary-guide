@@ -22,5 +22,10 @@
             "Página del Rosario",
             "Ir a la Oración Final"
         ]
+    },
+    "end": {
+        "title": "¡Gracias por orar!",
+        "prayerQuestion": "¿Quieres crear tu propia oración?",
+        "prayerInputPlaceholder": "Ingresa tu oración"
     }
 }
