@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 /*
 * ./src/pages/RosaryEnd.jsx
 * This is a page where the user goes when he or she
@@ -12,6 +13,12 @@ import { useTranslation } from "react-i18next";
 
 function RosaryEnd() {
     const { t } = useTranslation();
+    const [prayer, setPrayer] = useState("");
+    const [isSubmitted, setSubmitted] = useState(false);
+
+    const handleSubmit = () => {
+        if (prayer.trim().length !== 0) setSubmitted(true)
+    }
     return (
         <main className="RosaryEnd-main">
             <h1>{t("end.title")}</h1>
@@ -29,9 +36,22 @@ function RosaryEnd() {
 
                 <textarea
                     id="custom-prayer-input"
-                    rows="5"
+                    rows="6"
                     placeholder={t("end.prayerInputPlaceholder")}
+                    value={prayer}
+                    onChange={(e) => setPrayer(e.target.value)}
                 />
+
+                <button
+                    className="submit-prayer-btn"
+                    onClick={handleSubmit}
+                    disabled={prayer.trim().length === 0}
+                >
+                    submit
+                </button>
+
+                <p>{prayer}</p>
+
             </section>
         </main>
     );
