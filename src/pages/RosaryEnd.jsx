@@ -15,10 +15,12 @@ function RosaryEnd() {
     const { t } = useTranslation();
     const [prayer, setPrayer] = useState("");
     const [isSubmitted, setSubmitted] = useState(false);
+    const isValidPrayer = prayer.trim().length > 0;
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (prayer.trim().length !== 0) setSubmitted(true)
+        if (!isValidPrayer) return;
+        setSubmitted(true)
     }
     return (
         <main className="RosaryEnd-main">
@@ -47,13 +49,13 @@ function RosaryEnd() {
                     <button
                         className="submit-prayer-btn"
                         type="submit"
-                        disabled={prayer.trim().length === 0}
+                        disabled={!isValidPrayer}
                     >
                         {t("end.submitPrayer")}
                     </button>
                 </form>
                 
-                {isSubmitted && prayer.trim().length !== 0 && (
+                {isSubmitted && (
                     <div className="submitted-prayer">
                         <h3>{t("end.yourPrayer")}</h3>
                         <p>{prayer}</p>
