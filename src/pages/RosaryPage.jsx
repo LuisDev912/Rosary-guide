@@ -62,7 +62,6 @@ function RosaryPage() {
 
                 <aside className="prayers-guide">
                     <PrayersList />
-                    {/* Future feature: Add a toggle to show/hide this prayers list. Besides, it hasn't got styles yet */}
                 </aside>
 
                 {/* show the Mysteries of the current day */}

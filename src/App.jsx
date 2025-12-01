@@ -8,8 +8,6 @@ import NotFoundPage from "./pages/NotFoundPage.jsx";
 
 
 function App() {
-
-
   return (
     <>
       <LanguageSwitcher />
