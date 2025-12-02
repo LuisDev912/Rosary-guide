@@ -3,6 +3,7 @@
         "title": "Rosary Guide",
         "subtitle": "Learn how to pray the Holy Rosary step by step",
         "startButton": "Start prayer",
+        "infoButton": "See more information",
         "languageLabel": "Language"
     },
     "buttons": {
@@ -30,5 +31,28 @@
         "finalPrayerReminder": "Don't forget to finish with the Hail Holy Queen:",
         "submitPrayer": "Submit prayer",
         "yourPrayer": "Your prayer:"
+    },
+    "info": {
+        "title": "What is the Holy Rosary?",
+        "intro": "The Rosary is a traditional Catholic prayer that invites us to meditate on the life of Jesus and Mary. It is prayed by reflecting on different mysteries, each one representing a key moment in Salvation History.",
+        "structure": {
+            "title": "Structure of the Rosary",
+            "text": "The Rosary is made up of a sequence of prayers that accompany the meditation of each mystery."
+        },
+        "mysteriesExplanation": "Each group contains five mysteries. The group prayed depends on the day of the week.",
+        "days": {
+            "title": "Mysteries by Day",
+            "monday": "Monday: Joyful Mysteries",
+            "tuesday": "Tuesday: Sorrowful Mysteries",
+            "wednesday": "Wednesday: Glorious Mysteries",
+            "thursday": "Thursday: Luminous Mysteries",
+            "friday": "Friday: Sorrowful Mysteries",
+            "saturday": "Saturday: Joyful Mysteries",
+            "sunday": "Sunday: Glorious Mysteries"
+        },
+        "buttons": {
+            "startRosary": "Start praying the Rosary",
+            "goBack": "Back to Home"
+        }
     }
 }

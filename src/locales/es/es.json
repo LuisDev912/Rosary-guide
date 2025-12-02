@@ -3,6 +3,7 @@
     "title": "Guía del Rosario",
     "subtitle": "Aprende a rezar el Santo Rosario paso a paso",
     "startButton": "Comenzar",
+    "infoButton": "Ver más información",
     "languageLabel": "Idioma"
     },
     "buttons": {
@@ -30,5 +31,28 @@
         "finalPrayerReminder": "No olvides terminar con el Salve:",
         "submitPrayer": "Guardar oración",
         "yourPrayer": "Tu oración:"
+    },
+    "info": {
+        "title": "¿Qué es el Santo Rosario?",
+        "intro": "EL Rosario es una tradicional oración católica que nos invita a meditar sobre la vida de Jesús y Maria. Se reza reflexionando sobre diferentes misterios, cada uno representando un momento clave en la Historia de la Salvación.",
+        "structure": {
+            "title": "Estructura del Rosario",
+            "text": "El Rosario está compuesto por una secuencia de oraciones que acompañan la meditación de cada misterio."
+        },
+        "mysteriesExplanation": "Cada grupo contiene cinco misterios. El grupo que se reza depende del día de la semana.",
+        "days": {
+            "title": "Misterios por Día",
+            "monday": "Lunes: Misterios Gozosos",
+            "tuesday": "Martes: Misterios Dolorosos",
+            "wednesday": "Miércoles: Misterios Gloriosos",
+            "thursday": "Jueves: Misterios Luminosos",
+            "friday": "Viernes: Misterios Dolorosos",
+            "saturday": "Sábado: Misterios Gozosos",
+            "sunday": "Domingo: Misterios Gloriosos"
+        },
+        "buttons": {
+            "startRosary": "Empezar a rezar el Rosario",
+            "goBack": "Volver al Inicio"
+        }
     }
 }

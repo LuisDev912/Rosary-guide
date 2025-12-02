@@ -14,6 +14,8 @@ export default function HomePage() {
                 {t("home.startButton")}
             </NavLink>
 
+            <span style={{ margin: '10px' }}></span> {/* this is temporal*/}
+            
             <NavLink to="/info" className="info-link">
                 {t("home.infoButton")}
             </NavLink>
