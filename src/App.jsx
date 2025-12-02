@@ -5,6 +5,7 @@ import RosaryPage from "./pages/RosaryPage.jsx"
 import RosaryEnd from "./pages/RosaryEnd";
 import HomePage from "./pages/HomePage.jsx"
 import NotFoundPage from "./pages/NotFoundPage.jsx";
+import RosaryInfoPage from "./pages/RosaryInfoPage.jsx";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <LanguageSwitcher />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/info" element={<RosaryInfoPage />} />
         <Route path="/Rosary" element={<RosaryPage />} />
         <Route path="/Rosary/end" element={<RosaryEnd />} />
         <Route path="*" element={<NotFoundPage />} />

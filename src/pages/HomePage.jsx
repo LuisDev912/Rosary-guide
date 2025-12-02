@@ -13,6 +13,10 @@ export default function HomePage() {
             <NavLink to="/Rosary" className="start-button">
                 {t("home.startButton")}
             </NavLink>
+
+            <NavLink to="/info" className="info-button">
+                {t("home.infoButton")}
+            </NavLink>
         </main>
     );
 }
