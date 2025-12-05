@@ -8,7 +8,8 @@ export default function NotFoundPage() {
     const links = [
         "/",
         "/Rosary",
-        "/Rosary/end"
+        "/Rosary/end",
+        "/info"
     ];
 
     return (
@@ -24,6 +25,7 @@ export default function NotFoundPage() {
                         </NavLink>
                     </li>
                 ))}
+                {/* TODO: refactor duplicated code in NotFoundPage page and Header component */}
             </ul>
         </main>
     )
