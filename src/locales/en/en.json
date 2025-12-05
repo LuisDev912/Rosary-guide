@@ -41,7 +41,7 @@
         },
         "mysteriesExplanation": "Each group contains five mysteries. The group prayed depends on the day of the week.",
         "days": {
-            "title": "Mysteries by Day",
+            "title": "Mysteries by Day:",
             "monday": "Monday: Joyful Mysteries",
             "tuesday": "Tuesday: Sorrowful Mysteries",
             "wednesday": "Wednesday: Glorious Mysteries",

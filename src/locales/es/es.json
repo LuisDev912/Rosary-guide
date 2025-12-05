@@ -10,7 +10,9 @@
         "nextMystery": "Siguiente Misterio",
         "previousMystery": "Misterio Anterior",
         "togglePrayers": "Mostrar/Ocultar Oraciones",
-        "endRosary": "Finalizar el Rosario"
+        "endRosary": "Finalizar el Rosario",
+        "startRosary": "Empezar a rezar el Rosario",
+        "goBack": "Volver al Inicio"
     },
     "labels": {
         "currentMystery": "Misterio Actual"
@@ -41,7 +43,7 @@
         },
         "mysteriesExplanation": "Cada grupo contiene cinco misterios. El grupo que se reza depende del día de la semana.",
         "days": {
-            "title": "Misterios por Día",
+            "title": "Misterios por Día:",
             "monday": "Lunes: Misterios Gozosos",
             "tuesday": "Martes: Misterios Dolorosos",
             "wednesday": "Miércoles: Misterios Gloriosos",
@@ -49,10 +51,6 @@
             "friday": "Viernes: Misterios Dolorosos",
             "saturday": "Sábado: Misterios Gozosos",
             "sunday": "Domingo: Misterios Gloriosos"
-        },
-        "buttons": {
-            "startRosary": "Empezar a rezar el Rosario",
-            "goBack": "Volver al Inicio"
         }
     }
 }
