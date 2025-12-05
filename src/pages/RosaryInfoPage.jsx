@@ -5,6 +5,8 @@ export default function RosaryInfoPage() {
     const { t } = useTranslation();
     const navigate = useNavigate();
 
+    const days = t("info.days.list", {returnObjects: true})
+
     return (
         <main>
             <section className="intro-section">
@@ -21,13 +23,9 @@ export default function RosaryInfoPage() {
                 <h2>{t("info.mysteriesExplanation")}</h2>
                 <p>{t("info.days.title")}</p>
                 <ol>
-                    <li>{t("info.days.monday")}</li>
-                    <li>{t("info.days.tuesday")}</li>
-                    <li>{t("info.days.wednesday")}</li>
-                    <li>{t("info.days.thursday")}</li>
-                    <li>{t("info.days.friday")}</li>
-                    <li>{t("info.days.saturday")}</li>
-                    <li>{t("info.days.sunday")}</li>
+                    {days.map((day, index) => (
+                        <li key={index}>{day}</li>
+                    ))}
                 </ol>
             </section>
 

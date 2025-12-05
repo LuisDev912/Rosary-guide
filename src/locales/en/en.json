@@ -10,7 +10,9 @@
         "nextMystery": "Next Mystery",
         "previousMystery": "Previous Mystery",
         "togglePrayers": "Show/Hide Prayers",
-        "endRosary": "Finish the Rosary"
+        "endRosary": "Finish the Rosary",
+        "startRosary": "Start praying the Rosary",
+        "goBack": "Back to Home"
     },
     "labels": {
         "currentMystery": "Current Mystery"
@@ -42,17 +44,15 @@
         "mysteriesExplanation": "Each group contains five mysteries. The group prayed depends on the day of the week.",
         "days": {
             "title": "Mysteries by Day:",
-            "monday": "Monday: Joyful Mysteries",
-            "tuesday": "Tuesday: Sorrowful Mysteries",
-            "wednesday": "Wednesday: Glorious Mysteries",
-            "thursday": "Thursday: Luminous Mysteries",
-            "friday": "Friday: Sorrowful Mysteries",
-            "saturday": "Saturday: Joyful Mysteries",
-            "sunday": "Sunday: Glorious Mysteries"
-        },
-        "buttons": {
-            "startRosary": "Start praying the Rosary",
-            "goBack": "Back to Home"
+            "list": [
+                "Monday: Joyful Mysteries",
+                "Tuesday: Sorrowful Mysteries",
+                "Wednesday: Glorious Mysteries",
+                "Thursday: Luminous Mysteries",
+                "Friday: Sorrowful Mysteries",
+                "Saturday: Joyful Mysteries",
+                "Sunday: Glorious Mysteries"
+            ]
         }
     }
 }

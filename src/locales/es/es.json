@@ -44,13 +44,15 @@
         "mysteriesExplanation": "Cada grupo contiene cinco misterios. El grupo que se reza depende del día de la semana.",
         "days": {
             "title": "Misterios por Día:",
-            "monday": "Lunes: Misterios Gozosos",
-            "tuesday": "Martes: Misterios Dolorosos",
-            "wednesday": "Miércoles: Misterios Gloriosos",
-            "thursday": "Jueves: Misterios Luminosos",
-            "friday": "Viernes: Misterios Dolorosos",
-            "saturday": "Sábado: Misterios Gozosos",
-            "sunday": "Domingo: Misterios Gloriosos"
+            "list": [
+                "Lunes: Misterios Gozosos",
+                "Martes: Misterios Dolorosos",
+                "Miércoles: Misterios Gloriosos",
+                "Jueves: Misterios Luminosos",
+                "Viernes: Misterios Dolorosos",
+                "Sábado: Misterios Gozosos",
+                "Domingo: Misterios Gloriosos"
+            ]
         }
     }
 }
