@@ -2,6 +2,7 @@
 
 A modern, accessible and multilingual guide to praying the Holy Rosary.
 Built with React + Vite, fully responsive and designed for clarity and simplicity.
+This project is currently in **v1.0.0**.
 
 ---
 
