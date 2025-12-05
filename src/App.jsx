@@ -1,4 +1,3 @@
-import LanguageSwitcher from "./components/LanguageSwitcher";
 import './styles/App.css';
 import { Route, Routes } from 'react-router';
 import RosaryPage from "./pages/RosaryPage.jsx"
@@ -7,6 +6,7 @@ import HomePage from "./pages/HomePage.jsx"
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import RosaryInfoPage from "./pages/RosaryInfoPage.jsx";
 import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx"
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
 
-      
+      <Footer />
     </>
   )
 }
