@@ -6,12 +6,14 @@ import RosaryEnd from "./pages/RosaryEnd";
 import HomePage from "./pages/HomePage.jsx"
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import RosaryInfoPage from "./pages/RosaryInfoPage.jsx";
+import Header from "./components/Header.jsx";
 
 
 function App() {
   return (
     <>
-      <LanguageSwitcher />
+      <Header />
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/info" element={<RosaryInfoPage />} />
@@ -19,6 +21,8 @@ function App() {
         <Route path="/Rosary/end" element={<RosaryEnd />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+
+      
     </>
   )
 }
