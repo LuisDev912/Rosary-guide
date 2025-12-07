@@ -14,7 +14,7 @@ Notes:
 */
 
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useState, Activity } from "react";
 import Prayer from "./Prayer";
 
 function PrayerList() {
@@ -22,9 +22,7 @@ function PrayerList() {
     const [showAll, setShowAll] = useState(true);
     const prayers = t("prayers", { returnObjects: true });
 
-    const handleToggle = () => {
-        setShowAll(!showAll);
-    }
+    const handleToggle = () => setShowAll(!showAll); 
 
     return (
         <div>
@@ -32,17 +30,19 @@ function PrayerList() {
                 <button onClick={handleToggle}>{t("buttons.togglePrayers")}</button>
             </div>
 
-            <div className="prayers" style={{ display: showAll ? 'block' : 'none' }}>
-                <h2>{t("prayers.title")}</h2>
+            <Activity mode={showAll ? "visible" : "hidden"}>
+                <div className="prayers">
+                    <h2>{t("prayers.title")}</h2>
 
-            {Object.entries(prayers).map(([key, prayer]) => (
-                <Prayer
-                    key={key}
-                    title={prayer.title}
-                    text={prayer.text}
-                />
-            ))}
-            </div>
+                    {Object.entries(prayers).map(([key, prayer]) => (
+                        <Prayer
+                            key={key}
+                            title={prayer.title}
+                            text={prayer.text}
+                        />
+                    ))}
+                </div>
+            </Activity>
         </div>
     );
 }
