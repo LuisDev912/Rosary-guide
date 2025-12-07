@@ -10,7 +10,7 @@ export function Footer() {
 
             <div>
                 © {new Date().getFullYear()} {t("labels.footerMessage")} — Luis Calleja <br />
-                <small id="version">v1.0.0</small>
+                <small id="version">v1.0.1</small>
             </div>
         </footer>
     );

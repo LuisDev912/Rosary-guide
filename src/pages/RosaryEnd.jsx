@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { Activity, useState } from "react";
 /*
 * ./src/pages/RosaryEnd.jsx
 * This is a page where the user goes when he or she
