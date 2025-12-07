@@ -54,13 +54,13 @@ function RosaryEnd() {
                         {t("end.submitPrayer")}
                     </button>
                 </form>
-                
-                {isSubmitted && (
+
+                <Activity mode={isSubmitted ? 'visible' : 'hidden'}>
                     <div className="submitted-prayer">
                         <h3>{t("end.yourPrayer")}</h3>
                         <p>{prayer}</p>
                     </div>
-                )}
+                </Activity>
 
             </section>
         </main>
