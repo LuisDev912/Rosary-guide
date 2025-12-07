@@ -1,11 +1,12 @@
 {   
     "home": {
-    "headerTitle": "App del Rosario",
+    "headerTitle": "Aplicación del Rosario",
     "title": "Guía del Rosario",
     "subtitle": "Aprende a rezar el Santo Rosario paso a paso",
     "startButton": "Comenzar",
     "infoButton": "Ver más información",
-    "languageLabel": "Idioma"
+    "languageLabel": "Idioma",
+    "waiting": "Espera, el contenido se está cargando..."
     },
     "buttons": {
         "nextMystery": "Siguiente Misterio",

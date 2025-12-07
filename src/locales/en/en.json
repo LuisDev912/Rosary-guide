@@ -5,7 +5,8 @@
         "subtitle": "Learn how to pray the Holy Rosary step by step",
         "startButton": "Start prayer",
         "infoButton": "See more information",
-        "languageLabel": "Language"
+        "languageLabel": "Language",
+        "waiting": "Wait, content loading..."
     },
     "buttons": {
         "nextMystery": "Next Mystery",
