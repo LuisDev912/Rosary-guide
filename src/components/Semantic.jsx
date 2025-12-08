@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from './LanguageSwitcher.jsx'
 import { NavLink } from './NavLink.jsx';
+import Styles from './Header.module.css'
 
 export function Footer() {
     const { t } = useTranslation();
@@ -28,7 +29,7 @@ export function Header() {
 
     return (
         <header>
-            <h2>{t("home.headerTitle")}</h2>
+            <h2 className={Styles.text}>{t("home.headerTitle")}</h2>
 
             <nav>
                 {pages.map((pageLabel, index) => (
