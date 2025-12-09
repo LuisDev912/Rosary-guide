@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import Styles from './LanguageSwitcher.module.css';
 
 function LanguageSwitcher() {
     const { i18n } = useTranslation();
@@ -9,8 +10,14 @@ function LanguageSwitcher() {
 
     return (
         <div>
-            <button onClick={() => changeLang("es")}>ES</button>
-            <button onClick={() => changeLang("en")}>En</button>
+            <button
+                onClick={() => changeLang("es")}
+                className={Styles.langBtn}
+            >ES</button>
+            <button
+                onClick={() => changeLang("en")}
+                className={Styles.langBtn}
+            >En</button>
         </div>
     );
 }
