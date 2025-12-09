@@ -31,15 +31,20 @@ export function Header() {
         <header>
             <h2 className={Styles.text}>{t("home.headerTitle")}</h2>
 
-            <nav>
-                {pages.map((pageLabel, index) => (
-                    <NavLink key={index} to={links[index]}>
-                        {pageLabel} |
-                    </NavLink>
-                ))}
+            <nav className={Styles.navBar}>
+                <ul>
+                    {pages.map((pageLabel, index) => (
+                        <li key={index}>
+                            <NavLink to={links[index]}
+                                className={Styles.navLink}>
+                                {pageLabel}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
             </nav>
 
             <LanguageSwitcher />
         </header>
-    )
-}
+    );
+};
