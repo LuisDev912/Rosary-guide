@@ -1,9 +1,25 @@
+/* === Header === */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-sm);
+    gap: var(--space-sm);
+    background: var(--color-primary);
+    color: white;
+}
+
+/* Header text */
+
 .text{
     font-size: var(--font-size-lg);
     text-align: center;
     font-style: italic;
     font-family: var(--font-family-title);
 }
+
+/* Header's nav bar */
 
 .navBar {
     display: flex;
@@ -24,17 +40,7 @@
     font-weight: 600;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: var(--space-sm);
-    gap: var(--space-sm);
-    background: var(--color-primary);
-    color: white;
-}
-
-/* --- Footer --- */
+/* === Footer === */
 
 footer {
     padding: var(--space-lg) var(--space-md);
@@ -44,6 +50,8 @@ footer {
     color: var(--color-text-secondary);
     font-size: var(--font-size-sm);
 }
+
+/* Footer's text */
 
 .versicle{
     font-style: italic;
