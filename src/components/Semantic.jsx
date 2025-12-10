@@ -1,17 +1,17 @@
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from './LanguageSwitcher.jsx'
 import { NavLink } from './NavLink.jsx';
-import Styles from './Header.module.css'
+import Styles from './Semantic.module.css'
 
 export function Footer() {
     const { t } = useTranslation();
     return (
         <footer>
-            <p>{t("labels.finalVersicle")}</p>
+            <p className={Styles.versicle}>{t("labels.finalVersicle")}</p>
 
-            <div>
+            <div className={Styles.footerInfo}>
                 © {new Date().getFullYear()} {t("labels.footerMessage")} — Luis Calleja <br />
-                <small id="version">v1.0.1</small>
+                <small className={Styles.version}>v1.0.1</small>
             </div>
         </footer>
     );
