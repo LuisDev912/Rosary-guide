@@ -13,7 +13,7 @@ header {
 /* Header text */
 
 .text{
-    font-size: var(--font-size-lg);
+    font-size: clamp(var(--font-size-lg), 4vw, var(--font-size-xxl));
     text-align: center;
     font-style: italic;
     font-family: var(--font-family-title);
