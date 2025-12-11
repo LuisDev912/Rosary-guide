@@ -37,7 +37,7 @@ export function Header() {
                         <li key={index}>
                             <NavLink to={links[index]}
                                 className={Styles.navLink}>
-                                <p style={{color: 'white'}}>{pageLabel}</p>
+                                {pageLabel}
                             </NavLink>
                         </li>
                     ))}
