@@ -1,9 +1,9 @@
 import { Link } from "react-router";
-import Styles from './NavLink.module.css';
+import LinkStyles from '../styles/NavLink.module.css';
 
 export function NavLink({ href, children, ...restOfProps }) {
     return (
-        <Link to={href} {...restOfProps} className={Styles.anchor}>
+        <Link to={href} {...restOfProps} className={LinkStyles.anchor}>
             {children}
         </Link>
     );

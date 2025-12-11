@@ -1,4 +1,4 @@
-.langBtn{
+.btn{
     padding: var(--space-xs) var(--space-md);
     margin: 0 1rem;
     border-radius: var(--radius-md);
@@ -10,10 +10,10 @@
 }
 
 
-.langBtn:hover{
+.btn:hover{
     background-color: var(--color-text-secondary);
 }
 
-.langBtn:active{
+.btn:active{
     box-shadow: var(--shadow-medium);
 }
