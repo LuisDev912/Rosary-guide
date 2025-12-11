@@ -1,4 +1,13 @@
 .anchor{
     color: inherit;
     text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.anchor:hover{
+    text-decoration: underline;
+}
+
+.anchor:active{
+    color: var(--color-accent)
 }
