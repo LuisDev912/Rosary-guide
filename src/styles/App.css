@@ -82,11 +82,19 @@ button {
   transition: var(--transition-fast);
 }
 
-
 button:hover {
   background-color: var(--color-text-secondary);
 }
 
 button:active {
   box-shadow: var(--shadow-medium);
+}
+
+button:disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button:disabled:hover{
+  box-shadow: none;
 }
