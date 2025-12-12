@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router";
+import Styles from '../styles/page-styles/InfoPage.module.css'
 
 export default function RosaryInfoPage() {
     const { t } = useTranslation();
@@ -10,8 +11,8 @@ export default function RosaryInfoPage() {
     return (
         <main>
             <section className="intro-section">
-                <h1>{t("info.title")}</h1>
-                <h2>{t("info.intro")}</h2>
+                <h1 className={Styles.title}>{t("info.title")}</h1>
+                <p>{t("info.intro")}</p>
             </section>
 
             <section className="explanation-section">
