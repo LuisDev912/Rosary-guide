@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router";
 import Styles from '../styles/page-styles/InfoPage.module.css'
+import {HomeIcon} from '../assets/icons/HomeIcon.jsx'
 
 export default function RosaryInfoPage() {
     const { t } = useTranslation();
@@ -39,6 +40,7 @@ export default function RosaryInfoPage() {
                 <button
                     onClick={() => navigate('/')}>
                     {t("buttons.goBack")}
+                    <HomeIcon />
                 </button>
             </section>
         </main>
