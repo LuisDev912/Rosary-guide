@@ -70,3 +70,23 @@ body {
   font-family: var(--font-family-base);
   line-height: 1.6;
 }
+
+button {
+  padding: var(--space-xs) var(--space-md);
+  margin: 0 1rem;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  transition: var(--transition-fast);
+}
+
+
+button:hover {
+  background-color: var(--color-text-secondary);
+}
+
+button:active {
+  box-shadow: var(--shadow-medium);
+}

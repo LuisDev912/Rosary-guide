@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router";
 import Styles from '../styles/page-styles/InfoPage.module.css'
-import ButtonStyles from '../styles/Button.module.css'
 
 export default function RosaryInfoPage() {
     const { t } = useTranslation();
@@ -33,13 +32,11 @@ export default function RosaryInfoPage() {
 
             <section className={Styles.navigationSection}>
                 <button
-                    className={ButtonStyles.btn}
                     onClick={() => navigate('/Rosary')}>
                     {t("buttons.startRosary")}
                 </button>
 
                 <button
-                    className={ButtonStyles.btn}
                     onClick={() => navigate('/')}>
                     {t("buttons.goBack")}
                 </button>
