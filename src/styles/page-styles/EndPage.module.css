@@ -1,3 +1,5 @@
+/* --- modal --- */
+
 .reminder {
     cursor:pointer;
     overflow: hidden;
@@ -11,18 +13,32 @@
     border-bottom: 1px solid #e3e3e3;
 }
 
-.customPrayer{
+.reminder p:hover{
+    cursor:text;
+}
+
+/* --- prayer input --- */
+
+.customPrayer form{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
 #customPrayerInput{
+    font-family: inherit;
     border-radius: var(--radius-md);
-    border: none;
+    border: 2px solid var(--color-accent);
     padding: var(--space-xxs);
     font-size: var(--font-size-md);
     margin: 10px 0;
+    transition: var(--transition-fast);
+    padding: var(--space-xxs) var(--space-md);
+    padding: var(--space-xs) var(--space-xl);
+}
+
+#customPrayerInput:focus{
+    outline: none;
+    box-shadow: var(--shadow-medium);
 }

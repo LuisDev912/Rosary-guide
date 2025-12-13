@@ -40,7 +40,8 @@ function RosaryEnd() {
                 <h2>{t("end.prayerQuestion")}</h2>
 
                 <form onSubmit={handleSubmit}>
-                    <input
+                    <textarea
+                        rows="5" cols="20"
                         type="text"
                         id={Styles.customPrayerInput}
                         placeholder={t("end.prayerInputPlaceholder")}
