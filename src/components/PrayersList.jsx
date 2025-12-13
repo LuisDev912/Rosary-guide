@@ -32,7 +32,7 @@ function PrayerList() {
 
             <Activity mode={showAll ? "visible" : "hidden"}>
                 <div className="prayers">
-                    <h2>{t("prayers.title")}</h2>
+                    <h2 className="title">{t("prayers.title")}</h2>
 
                     {Object.entries(prayers).map(([key, prayer]) => (
                         <Prayer

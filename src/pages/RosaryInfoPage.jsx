@@ -12,18 +12,18 @@ export default function RosaryInfoPage() {
     return (
         <main>
             <section className="intro-section">
-                <h1 className={Styles.title}>{t("info.title")}</h1>
+                <h1 className="title">{t("info.title")}</h1>
                 <p>{t("info.intro")}</p>
             </section>
 
             <section className="explanation-section">
                 <div className="structure-intro">
-                    <h3 className={Styles.subtitle}>{t("info.structure.title")}</h3>
+                    <h3 className="subtitle">{t("info.structure.title")}</h3>
                     <p>{t("info.structure.text")}</p>
                 </div>
 
                 <p>{t("info.mysteriesExplanation")}</p>
-                <p className={Styles.subtitle}>{t("info.days.title")}</p>
+                <p className="subtitle">{t("info.days.title")}</p>
                 <ol>
                     {days.map((day, index) => (
                         <li key={index}>{day}</li>

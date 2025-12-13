@@ -53,11 +53,11 @@ function RosaryPage() {
 
     return (
         <>
-            <div className="Rosary-page">
+            <main className="Rosary-page">
 
                 {/* show the Steps component to guide through the Rosary */}
                 <section className="Rosary-steps">
-                    <h2>{t("steps.title")}</h2>
+                    <h2 className="title">{t("steps.title")}</h2>
                     <Steps/>
                 </section>
 
@@ -67,7 +67,7 @@ function RosaryPage() {
 
                 {/* show the Mysteries of the current day */}
                 <section className="Mysteries-of-the-day">
-                    <h2>{t("mysteries.title")}</h2>
+                    <h2 className="title">{t("mysteries.title")}</h2>
                     <MysteryGroup
                         title={t(`mysteries.${todayMysteryGroup}.title`)}
                         items={todayMysteries.list}
@@ -78,7 +78,7 @@ function RosaryPage() {
                 <section className="Mystery-controls">
                     <RosaryRunner mysteries={todayMysteries.list} />
                 </section>
-            </div>
+            </main>
         </>
     );
 }

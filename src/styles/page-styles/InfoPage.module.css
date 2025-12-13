@@ -1,15 +1,3 @@
-.title {
-    font-size: var(--font-size-lg);
-    text-align: center;
-    font-style: italic;
-    text-decoration: underline;
-}
-
-.subtitle{
-    font-style: italic;
-    font-weight: 600;
-}
-
 /* --- buttons --- */
 
 .navigationSection{
