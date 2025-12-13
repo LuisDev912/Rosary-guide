@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
-import CurrentMystery from "./CurrentMystery";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router";
+import { Next } from "../assets/icons/Next";
+import { Previous } from "../assets/icons/Previous";
+import CurrentMystery from "./CurrentMystery";
 
 /**
 * RosaryRunner.jsx
@@ -46,6 +48,7 @@ function RosaryRunner({ mysteries }) {
                     onClick={() => goPrevious()}
                     disabled={currentMysteryIndex === 0}
                 >
+                <Previous />
                     {t("buttons.previousMystery")}
                 </button>
 
@@ -53,6 +56,7 @@ function RosaryRunner({ mysteries }) {
                     onClick={() => goNext()}
                     disabled={currentMysteryIndex === 4}>
                     {t("buttons.nextMystery")}
+                    <Next />
                 </button>
 
                 <button className="end-Rosary"
