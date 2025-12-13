@@ -1,0 +1,28 @@
+.reminder {
+    cursor:pointer;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    max-height: 3rem;
+}
+
+.reminder:open {
+    /* Set a large enough max-height to cover all content when open */
+    max-height: 25rem;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.customPrayer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#customPrayerInput{
+    border-radius: var(--radius-md);
+    border: none;
+    padding: var(--space-xxs);
+    font-size: var(--font-size-md);
+    margin: 10px 0;
+}

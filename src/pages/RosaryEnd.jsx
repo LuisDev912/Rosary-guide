@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Activity, useState } from "react";
+import Styles from '../styles/page-styles/EndPage.module.css'
+
 /*
 * ./src/pages/RosaryEnd.jsx
 * This is a page where the user goes when he or she
@@ -27,20 +29,20 @@ function RosaryEnd() {
             <h1>{t("end.title")}</h1>
 
             <section className="prayer-reminder">
-                <details>
+                <details className={Styles.reminder}>
                     <p>{t("prayers.hailHolyQueen.text")}</p>
                     <summary>{t("end.finalPrayerReminder")}
                     </summary>
                 </details>
             </section>
 
-            <section className="custom-prayer">
+            <section className={Styles.customPrayer}>
                 <h2>{t("end.prayerQuestion")}</h2>
 
                 <form onSubmit={handleSubmit}>
                     <input
                         type="text"
-                        id="custom-prayer-input"
+                        id={Styles.customPrayerInput}
                         placeholder={t("end.prayerInputPlaceholder")}
                         value={prayer}
                         onChange={(e) => setPrayer(e.target.value)}
