@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router";
-import Styles from '../styles/page-styles/InfoPage.module.css'
 import {HomeIcon} from '../assets/icons/HomeIcon.jsx'
+import Styles from '../styles/page-styles/InfoPage.module.css'
 
 export default function RosaryInfoPage() {
     const { t } = useTranslation();

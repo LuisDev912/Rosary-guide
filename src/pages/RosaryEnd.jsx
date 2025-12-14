@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Activity, useState } from "react";
 import Styles from '../styles/page-styles/EndPage.module.css'
 
-/*
+/**
 * ./src/pages/RosaryEnd.jsx
 * This is a page where the user goes when he or she
 * completes the Rosary. Here, the user can write a
@@ -26,7 +26,7 @@ function RosaryEnd() {
     }
     return (
         <main className="RosaryEnd-main">
-            <h1>{t("end.title")}</h1>
+            <h1 className="title">{t("end.title")}</h1>
 
             <section className="prayer-reminder">
                 <details className={Styles.reminder}>
@@ -37,7 +37,7 @@ function RosaryEnd() {
             </section>
 
             <section className={Styles.customPrayer}>
-                <h2>{t("end.prayerQuestion")}</h2>
+                <h2 className="subtitle">{t("end.prayerQuestion")}</h2>
 
                 <form onSubmit={handleSubmit}>
                     <textarea

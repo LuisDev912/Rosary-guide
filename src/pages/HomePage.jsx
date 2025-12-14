@@ -6,19 +6,19 @@ export default function HomePage() {
 
     return (
         <main>
-            <h1>{t("home.title")}</h1>
-            <h2>{t("home.subtitle")}</h2>
+            <h1 className="title">{t("home.title")}</h1>
+            <h2 className="subtitle">{t("home.subtitle")}</h2>
             <p>{t("overview.intro")}</p>
 
-            <NavLink to="/Rosary" className="start-link">
-                {t("home.startButton")}
-            </NavLink>
-
-            <span style={{ margin: '10px' }}></span> {/* this is temporal*/}
-            
-            <NavLink to="/info" className="info-link">
-                {t("home.infoButton")}
-            </NavLink>
+            <div className="navigationLinks" style={{display: 'flex', gap: '15px'}}>
+                <NavLink to="/Rosary" className="start-link">
+                    {t("home.startButton")}
+                </NavLink>
+                
+                <NavLink to="/info" className="info-link">
+                    {t("home.infoButton")}
+                </NavLink>
+            </div>
         </main>
     );
 }
