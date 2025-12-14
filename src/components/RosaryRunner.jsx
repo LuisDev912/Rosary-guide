@@ -4,6 +4,7 @@ import { useNavigate } from "react-router";
 import { Next } from "../assets/icons/Next";
 import { Previous } from "../assets/icons/Previous";
 import CurrentMystery from "./CurrentMystery";
+import Styles from '../styles/page-styles/RosaryPrayer.module.css'
 
 /**
 * RosaryRunner.jsx
@@ -43,28 +44,31 @@ function RosaryRunner({ mysteries }) {
                 <span>{currentMysteryIndex + 1} / 5</span>
             </div>
 
-            <div className="control-buttons">
-                <button className="previous-mystery"
-                    onClick={() => goPrevious()}
-                    disabled={currentMysteryIndex === 0}
-                >
-                <Previous />
-                    {t("buttons.previousMystery")}
-                </button>
+            <div className={Styles.controlButtons}>
+                <div className={Styles.navigateButtons}>
+                    <button className="previous-mystery"
+                        onClick={() => goPrevious()}
+                        disabled={currentMysteryIndex === 0}
+                    >
+                    <Previous />
+                        {t("buttons.previousMystery")}
+                    </button>
 
-                <button className="next-mystery"
-                    onClick={() => goNext()}
-                    disabled={currentMysteryIndex === 4}>
-                    {t("buttons.nextMystery")}
-                    <Next />
-                </button>
+                    <button className="next-mystery"
+                        onClick={() => goNext()}
+                        disabled={currentMysteryIndex === 4}>
+                        {t("buttons.nextMystery")}
+                        <Next />
+                    </button>
+                </div>
 
-                <button className="end-Rosary"
-                    disabled={currentMysteryIndex !== 4}
-                    onClick={() => navigate('/Rosary/end')}
-                >
-                    {t("buttons.endRosary")}
-                </button>
+                <div className="end-button">
+                    <button className="end-Rosary"
+                        disabled={currentMysteryIndex !== 4}
+                        onClick={() => navigate('/Rosary/end')}>
+                        {t("buttons.endRosary")}
+                    </button>
+                </div>
             </div>
         </section>
     );

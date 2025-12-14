@@ -1,0 +1,12 @@
+.controlButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.navigateButtons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
