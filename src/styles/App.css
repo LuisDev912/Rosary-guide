@@ -71,6 +71,8 @@ body {
   line-height: 1.6;
 }
 
+/* --- buttons --- */
+
 button {
   padding: var(--space-xs) var(--space-md);
   margin: 0 1rem;
@@ -99,6 +101,8 @@ button:disabled:hover{
   box-shadow: none;
 }
 
+/* --- text --- */
+
 .title {
   font-size: var(--font-size-lg);
   text-align: center;
@@ -109,4 +113,13 @@ button:disabled:hover{
 .subtitle {
   font-style: italic;
   font-weight: 600;
+}
+
+/* --- main content --- */
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
