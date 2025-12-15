@@ -19,7 +19,7 @@ import Prayer from "./Prayer";
 
 function PrayerList() {
     const { t } = useTranslation();
-    const [showAll, setShowAll] = useState(true);
+    const [showAll, setShowAll] = useState(false);
     const prayers = t("prayers", { returnObjects: true });
 
     const handleToggle = () => setShowAll(!showAll); 

@@ -18,11 +18,11 @@ function Prayer({ title, text }) {
 
     return (
         <section>
-            <h3>{title}</h3>
+            <h3 className="title">{title}</h3>
 
             {/* supports line breaks */}
             {text.split("\n").map((line, idx) => (
-                <p key={idx}>{line}</p>
+                <p key={idx} style={{textAlign: 'center'}}>{line}</p>
             ))}
         </section>
     );
