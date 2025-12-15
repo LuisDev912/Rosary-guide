@@ -26,7 +26,12 @@ function PrayerList() {
 
     return (
         <div>
-            <div className="toggle-list">
+            <div
+                className="toggle-list"
+                style={{
+                    display: 'flex',
+                    justifyContent: 'center'
+                }}>
                 <button onClick={handleToggle}>{t("buttons.togglePrayers")}</button>
             </div>
 
