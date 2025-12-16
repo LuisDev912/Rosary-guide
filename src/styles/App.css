@@ -124,3 +124,16 @@ main{
   align-items: center;
   justify-content: center;
 }
+
+/* styles for viewports at least 600px wide (e.g: tablets) */
+@media screen and (min-width: 600px){
+  body{
+    background-color: var(--color-card-bg);
+  }
+
+  main{
+    background-color: var(--color-bg);
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
