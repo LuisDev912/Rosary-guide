@@ -10,7 +10,10 @@ export default function HomePage() {
             <h2 className="subtitle">{t("home.subtitle")}</h2>
             <p>{t("overview.intro")}</p>
 
-            <div className="navigationLinks" style={{display: 'flex', gap: '15px'}}>
+            <div className="navigationLinks" style={{
+                display: 'flex', 
+                gap: '15px'
+            }}>
                 <NavLink to="/Rosary" className="start-link">
                     {t("home.startButton")}
                 </NavLink>

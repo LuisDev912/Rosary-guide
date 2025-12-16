@@ -16,7 +16,7 @@ export default function RosaryInfoPage() {
                 <p>{t("info.intro")}</p>
             </section>
 
-            <section className="explanation-section">
+            <section className={Styles.explanationSection}>
                 <div className="structure-intro">
                     <h3 className="subtitle">{t("info.structure.title")}</h3>
                     <p>{t("info.structure.text")}</p>
