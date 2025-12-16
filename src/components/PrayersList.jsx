@@ -25,7 +25,8 @@ function PrayerList() {
     const handleToggle = () => setShowAll(!showAll); 
 
     return (
-        <div>
+        <>
+            <h2 className="title">{t("prayers.title")}</h2>
             <div
                 className="toggle-list"
                 style={{
@@ -37,7 +38,6 @@ function PrayerList() {
 
             <Activity mode={showAll ? "visible" : "hidden"}>
                 <div className="prayers">
-                    <h2 className="title">{t("prayers.title")}</h2>
 
                     {Object.entries(prayers).map(([key, prayer]) => (
                         <Prayer
@@ -48,7 +48,7 @@ function PrayerList() {
                     ))}
                 </div>
             </Activity>
-        </div>
+        </>
     );
 }
 
