@@ -11,7 +11,7 @@ export function Footer() {
 
             <div className={SemanticStyles.footerInfo}>
                 © {new Date().getFullYear()} {t("labels.footerMessage")} — Luis Calleja <br />
-                <small className={SemanticStyles.version}>v1.1.0</small>
+                <small className={SemanticStyles.version}>v1.1.1</small>
             </div>
         </footer>
     );
