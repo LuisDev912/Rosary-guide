@@ -38,7 +38,7 @@ function RosaryRunner({ mysteries }) {
 
     return (
         <>
-            <div className="current-mystery">
+            <div className="current-mystery" style={{textAlign: 'center'}}>
                 <strong>{t("labels.currentMystery")}:</strong>
                 <CurrentMystery selectedMystery={currentMystery} /> 
                 <span>{currentMysteryIndex + 1} / 5</span>

@@ -10,3 +10,7 @@
     justify-content: center;
     flex-direction: row;
 }
+
+.currentMysteryStyles{
+    text-align: center;
+}
