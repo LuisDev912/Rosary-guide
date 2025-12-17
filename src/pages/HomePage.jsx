@@ -12,7 +12,7 @@ export default function HomePage() {
 
             <div className="navigationLinks" style={{
                 display: 'flex', 
-                gap: '15px'
+                justifyContent: 'space-evenly'
             }}>
                 <NavLink to="/Rosary" className="start-link">
                     {t("home.startButton")}
