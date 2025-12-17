@@ -37,7 +37,7 @@ function RosaryRunner({ mysteries }) {
     }
 
     return (
-        <section className="Rosary-runner">
+        <>
             <div className="current-mystery">
                 <strong>{t("labels.currentMystery")}:</strong>
                 <CurrentMystery selectedMystery={currentMystery} /> 
@@ -70,7 +70,7 @@ function RosaryRunner({ mysteries }) {
                     </button>
                 </div>
             </div>
-        </section>
+        </>
     );
 }
 
