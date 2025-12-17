@@ -14,7 +14,7 @@ export default function NotFoundPage() {
 
     return (
         <section>
-            <h1>{t("notFound.title")}</h1>
+            <h1 className="heading-primary">{t("notFound.title")}</h1>
             <h3>{t("notFound.alternatives")}</h3>
 
             <ul>

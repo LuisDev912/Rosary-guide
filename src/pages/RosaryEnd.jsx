@@ -26,7 +26,7 @@ function RosaryEnd() {
     }
     return (
         <>
-            <h1 className="title">{t("end.title")}</h1>
+            <h1 className="heading-primary">{t("end.title")}</h1>
 
             <section className="prayer-reminder">
                 <details className={Styles.reminder}>
@@ -37,7 +37,7 @@ function RosaryEnd() {
             </section>
 
             <section className={Styles.customPrayer}>
-                <h2 className="subtitle">{t("end.prayerQuestion")}</h2>
+                <h2 className="heading-secondary">{t("end.prayerQuestion")}</h2>
 
                 <form onSubmit={handleSubmit}>
                     <textarea

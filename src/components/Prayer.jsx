@@ -18,7 +18,7 @@ function Prayer({ title, text }) {
 
     return (
         <section>
-            <h3 className="subtitle">{title}</h3>
+            <h3 className="heading-secondary">{title}</h3>
 
             {/* supports line breaks */}
             {text.split("\n").map((line, idx) => (

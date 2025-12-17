@@ -19,7 +19,7 @@ function MysteryGroup({title, items}) {
     const { t } = useTranslation();
     return (
         <>
-            <h3>{t(title)}</h3>
+            <h3 className="heading-tertiary">{t(title)}</h3>
             <div className="MysteriesGroup">
                 <ol>
                     

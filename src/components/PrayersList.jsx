@@ -26,7 +26,7 @@ function PrayerList() {
 
     return (
         <>
-            <h2 className="title">{t("prayers.title")}</h2>
+            <h2 className="heading-secondary">{t("prayers.title")}</h2>
             <div
                 className="toggle-list"
                 style={{

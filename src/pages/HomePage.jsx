@@ -6,8 +6,8 @@ export default function HomePage() {
 
     return (
         <section>
-            <h1 className="title">{t("home.title")}</h1>
-            <h2 className="subtitle">{t("home.subtitle")}</h2>
+            <h1 className="heading-primary">{t("home.title")}</h1>
+            <h2 className="heading-secondary">{t("home.subtitle")}</h2>
             <p>{t("overview.intro")}</p>
 
             <div className="navigationLinks" style={{
