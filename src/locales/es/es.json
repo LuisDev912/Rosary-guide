@@ -19,7 +19,8 @@
     "labels": {
         "currentMystery": "Misterio Actual",
         "footerMessage": "App Devocional",
-        "finalVersicle": "La paz les dejo; mi paz les doy. Yo no se la doy como el mundo la da. No se turben ni tengan miedo. Juan 14:27"
+        "finalVersicle": "La paz les dejo; mi paz les doy. Yo no se la doy como el mundo la da. No se turben ni tengan miedo. Juan 14:27",
+        "RosaryPrayingTitle": "Reza el Rosario"
     }, 
     "notFound": {
         "title": "Oops, parece que la página que estabas buscando no existe.",

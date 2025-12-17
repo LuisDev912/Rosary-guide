@@ -19,7 +19,8 @@
     "labels": {
         "currentMystery": "Current Mystery",
         "footerMessage": "Devotional App",
-        "finalVersicle": "Peace is what I leave with you; it is my own peace that I give you. I do not give it as the world does. Do not be worried and upset; do not be afraid. John 14:27"
+        "finalVersicle": "Peace is what I leave with you; it is my own peace that I give you. I do not give it as the world does. Do not be worried and upset; do not be afraid. John 14:27",
+        "RosaryPrayingTitle": "Pray the Holy Rosary"
     },
     "notFound": {
         "title": "Oops, it seems like the page you were looking for doesn't exist.",

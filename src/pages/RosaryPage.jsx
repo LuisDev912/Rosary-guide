@@ -53,6 +53,7 @@ function RosaryPage() {
 
     return (
         <>
+            <h1 className="title">{t("labels.RosaryPrayingTitle")}</h1>
             {/* show the Steps component to guide through the Rosary */}
             <section className="Rosary-steps">
                 <h2 className="title">{t("steps.title")}</h2>
