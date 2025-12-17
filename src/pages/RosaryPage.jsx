@@ -53,32 +53,29 @@ function RosaryPage() {
 
     return (
         <>
-            <main className="Rosary-page">
+            {/* show the Steps component to guide through the Rosary */}
+            <section className="Rosary-steps">
+                <h2 className="title">{t("steps.title")}</h2>
+                <Steps/>
+            </section>
 
-                {/* show the Steps component to guide through the Rosary */}
-                <section className="Rosary-steps">
-                    <h2 className="title">{t("steps.title")}</h2>
-                    <Steps/>
-                </section>
+            <aside className="prayers-guide">
+                <PrayersList />
+            </aside>
 
-                <aside className="prayers-guide">
-                    <PrayersList />
-                </aside>
+            {/* show the Mysteries of the current day */}
+            <section className="Mysteries-of-the-day">
+                <h2 className="title">{t("mysteries.title")}</h2>
+                <MysteryGroup
+                    title={t(`mysteries.${todayMysteryGroup}.title`)}
+                    items={todayMysteries.list}
+                />
+            </section>
 
-                {/* show the Mysteries of the current day */}
-                <section className="Mysteries-of-the-day">
-                    <h2 className="title">{t("mysteries.title")}</h2>
-                    <MysteryGroup
-                        title={t(`mysteries.${todayMysteryGroup}.title`)}
-                        items={todayMysteries.list}
-                    />
-                </section>
-
-                {/* control buttons  */}
-                <section className="Mystery-controls">
-                    <RosaryRunner mysteries={todayMysteries.list} />
-                </section>
-            </main>
+            {/* control buttons  */}
+            <section className="Mystery-controls">
+                <RosaryRunner mysteries={todayMysteries.list} />
+            </section>
         </>
     );
 }

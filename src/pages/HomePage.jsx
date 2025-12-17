@@ -5,7 +5,7 @@ export default function HomePage() {
     const { t } = useTranslation();
 
     return (
-        <main>
+        <section>
             <h1 className="title">{t("home.title")}</h1>
             <h2 className="subtitle">{t("home.subtitle")}</h2>
             <p>{t("overview.intro")}</p>
@@ -22,6 +22,6 @@ export default function HomePage() {
                     {t("home.infoButton")}
                 </NavLink>
             </div>
-        </main>
+        </section>
     );
 }

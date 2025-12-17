@@ -13,7 +13,7 @@ export default function NotFoundPage() {
     ];
 
     return (
-        <main>
+        <section>
             <h2>{t("notFound.title")}</h2>
             <h3>{t("notFound.alternatives")}</h3>
 
@@ -27,6 +27,6 @@ export default function NotFoundPage() {
                 ))}
                 {/* TODO: refactor duplicated code in NotFoundPage page and Header component */}
             </ul>
-        </main>
+        </section>
     )
 }

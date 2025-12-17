@@ -10,7 +10,7 @@ export default function RosaryInfoPage() {
     const days = t("info.days.list", {returnObjects: true})
 
     return (
-        <main>
+        <>
             <section className="intro-section">
                 <h1 className="title">{t("info.title")}</h1>
                 <p>{t("info.intro")}</p>
@@ -43,6 +43,6 @@ export default function RosaryInfoPage() {
                     <HomeIcon />
                 </button>
             </section>
-        </main>
+        </>
     );
 }

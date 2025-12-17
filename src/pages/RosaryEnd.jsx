@@ -25,7 +25,7 @@ function RosaryEnd() {
         setSubmitted(true)
     }
     return (
-        <main className="RosaryEnd-main">
+        <>
             <h1 className="title">{t("end.title")}</h1>
 
             <section className="prayer-reminder">
@@ -65,7 +65,7 @@ function RosaryEnd() {
                 </Activity>
 
             </section>
-        </main>
+        </>
     );
 }
 export default RosaryEnd;
