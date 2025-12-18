@@ -136,11 +136,13 @@ main{
     background-color: var(--color-card-bg);
   }
 
-  main{
+  main {
     background-color: var(--color-bg);
-    padding: var(--space-lg);
+    padding: var(--space-xl);
     max-width: 900px;
-    margin: 0 auto;
+    margin: var(--space-lg) auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
   }
 }
 
