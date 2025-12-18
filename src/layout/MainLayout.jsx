@@ -6,7 +6,7 @@ function MainLayout() {
         <>
             <Header />
 
-            <main style={{ padding: "1rem" }}>
+            <main>
                 <Outlet />
             </main>
 
