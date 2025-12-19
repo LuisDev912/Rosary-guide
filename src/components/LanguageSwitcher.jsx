@@ -12,7 +12,11 @@ function LanguageSwitcher() {
             <button
                 onClick={() => changeLang("es")}
             >ES</button>
+
             <button
+                style={{
+                    marginTop: '5px'
+                }}
                 onClick={() => changeLang("en")}
             >En</button>
         </div>
