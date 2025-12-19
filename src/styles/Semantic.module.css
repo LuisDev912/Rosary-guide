@@ -40,6 +40,24 @@ header {
     font-weight: 600;
 }
 
+/* --- Header media query */
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: var(--space-md) var(--space-xl);
+    }
+
+    .navBar ul {
+        gap: var(--space-md);
+    }
+
+    .text {
+        text-align: left;
+    }
+}
+
 /* === Footer === */
 
 footer {
