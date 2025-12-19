@@ -1,4 +1,4 @@
-import { NavLink as RouterNavLink } from "react-router";
+import { NavLink as RouterNavLink } from "react-router-dom";
 import LinkStyles from '../styles/NavLink.module.css';
 
 export function NavLink({ href, children, ...restOfProps }) {

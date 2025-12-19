@@ -33,14 +33,19 @@ export function Header() {
 
             <nav className={SemanticStyles.navBar}>
                 <ul>
+                    
                     {pages.map((pageLabel, index) => (
                         <li key={index}>
-                            <NavLink to={links[index]}
-                                className={SemanticStyles.navLink}>
+                            <NavLink
+                                to={links[index]}
+                                end={links[index] === '/Rosary'}
+                                className={SemanticStyles.navLink}
+                            >
                                 {pageLabel}
                             </NavLink>
                         </li>
                     ))}
+                    
                 </ul>
             </nav>
 
