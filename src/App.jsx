@@ -1,6 +1,6 @@
 import './styles/App.css';
 import { lazy, Suspense } from 'react';
-import { Route, Routes } from 'react-router';
+import { Route, Routes } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const RosaryPage = lazy(() => import('./pages/RosaryPage.jsx'))
