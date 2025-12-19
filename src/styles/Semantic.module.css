@@ -40,7 +40,7 @@ header {
     font-weight: 600;
 }
 
-/* --- Header media query */
+/* --- header's media query */
 
 @media (min-width: 768px) {
     header {
@@ -83,4 +83,18 @@ footer {
 .version{
     font-size: var(--font-size-sm);
     opacity: 0.7;
+}
+
+/* --- footer's media query */
+
+@media (min-width: 768px) {
+    footer {
+        padding: var(--space-xl);
+        font-size: var(--font-size-md);
+    }
+
+    .versicle {
+        max-width: 600px;
+        margin: 0 auto var(--space-md);
+    }
 }
