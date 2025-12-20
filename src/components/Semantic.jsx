@@ -28,7 +28,6 @@ export function Header() {
         { label: pages[3], to: "/info", aria: "aria.info" }
     ];
 
-
     return (
         <header>
             <h2 className={SemanticStyles.text}>{t("home.headerTitle")}</h2>
@@ -48,11 +47,8 @@ export function Header() {
                             </NavLink>
                         </li>
                     ))}
-
-                    
                 </ul>
             </nav>
-
             <LanguageSwitcher />
         </header>
     );

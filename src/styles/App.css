@@ -130,6 +130,13 @@ main{
   justify-content: center;
 }
 
+/* --- accessibility --- */
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
 /* styles for viewports at least 600px wide (e.g: tablets) */
 @media screen and (min-width: 600px){
   body{
