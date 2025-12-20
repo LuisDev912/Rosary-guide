@@ -5,6 +5,8 @@ import en from "./locales/en/en.json";
 import es from "./locales/es/es.json";
 import enRosary from "./locales/en/rosary.json";
 import esRosary from "./locales/es/rosary.json";
+import screenReadersEn from "./locales/en/screenReadersEn.json";
+import screenReadersEs from "./locales/es/screenReadersEs.json";
 
 i18n
     .use(initReactI18next)
@@ -13,12 +15,14 @@ i18n
             en: {
                 translation: {
                     ...en,
-                    ...enRosary
+                    ...enRosary,
+                    ...screenReadersEn
             } },
             es: {
                 translation: {
                     ...es,
-                    ...esRosary
+                    ...esRosary,
+                    ...screenReadersEs
             } },
         },
 

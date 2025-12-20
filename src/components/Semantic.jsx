@@ -20,12 +20,15 @@ export function Footer() {
 export function Header() {
     const { t } = useTranslation();
     const pages = t("notFound.pages", { returnObjects: true });
+
     const links = [
         "/",
         "/Rosary",
         "/Rosary/end",
         "/info"
     ];
+
+    const ariaLinks = t("aria-links", { returnObjects: true });
 
     return (
         <header>
@@ -40,6 +43,7 @@ export function Header() {
                                 to={links[index]}
                                 end={links[index] === '/Rosary'}
                                 className={SemanticStyles.navLink}
+                                aria-label={ariaLinks[index]}
                             >
                                 {pageLabel}
                             </NavLink>
