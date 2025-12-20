@@ -1,8 +1,8 @@
 {
-    "aria-links": [
-        "go to the home page",
-        "go to the rosary praying page",
-        "go to the final prayer page",
-        "go to the rosary info page"
-    ]
+    "aria": {
+        "home": "Go to the home page",
+        "rosary": "Go to the rosary praying page",
+        "end": "Go to the final prayer page",
+        "info": "Go to the rosary information page"
+    }
 }

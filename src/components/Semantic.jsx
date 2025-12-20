@@ -21,14 +21,13 @@ export function Header() {
     const { t } = useTranslation();
     const pages = t("notFound.pages", { returnObjects: true });
 
-    const links = [
-        "/",
-        "/Rosary",
-        "/Rosary/end",
-        "/info"
+    const navItems = [
+        { label: pages[0], to: "/", aria: "aria.home" },
+        { label: pages[1], to: "/Rosary", aria: "aria.rosary", end: true },
+        { label: pages[2], to: "/Rosary/end", aria: "aria.end" },
+        { label: pages[3], to: "/info", aria: "aria.info" }
     ];
 
-    const ariaLinks = t("aria-links", { returnObjects: true });
 
     return (
         <header>
@@ -37,18 +36,19 @@ export function Header() {
             <nav className={SemanticStyles.navBar}>
                 <ul>
 
-                    {pages.map((pageLabel, index) => (
-                        <li key={index}>
+                    {navItems.map(({ label, to, aria, end }) => (
+                        <li key={to}>
                             <NavLink
-                                to={links[index]}
-                                end={links[index] === '/Rosary'}
+                                to={to}
+                                end={end}
+                                aria-label={t(aria)}
                                 className={SemanticStyles.navLink}
-                                aria-label={ariaLinks[index]}
                             >
-                                {pageLabel}
+                                {label}
                             </NavLink>
                         </li>
                     ))}
+
                     
                 </ul>
             </nav>

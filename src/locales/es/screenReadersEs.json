@@ -1,8 +1,8 @@
 {
-    "aria-links": [
-        "ir a la página principal",
-        "ir a la página para rezar el Rosario",
-        "ir a la página de la oración final",
-        "ir a la página para ver más información sobre el Rosario"
-    ]
+    "aria": {
+        "home": "Ir a la página principal",
+        "rosary": "Ir a la página para rezar el Rosario",
+        "end": "Ir a la página de la oración final",
+        "info": "Ir a la página con información sobre el Rosario"
+    }
 }
