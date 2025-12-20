@@ -4,5 +4,8 @@
         "rosary": "Go to the rosary praying page",
         "end": "Go to the final prayer page",
         "info": "Go to the rosary information page"
+    },
+    "a11y":{
+        "skipToContent": "Skip to main content"
     }
 }

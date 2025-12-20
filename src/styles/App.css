@@ -137,6 +137,20 @@ main{
   outline-offset: 3px;
 }
 
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--color-accent);
+  color: black;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
 /* styles for viewports at least 600px wide (e.g: tablets) */
 @media screen and (min-width: 600px){
   body{
