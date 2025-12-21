@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 /**
 * CurrentMystery.jsx
 *
@@ -15,17 +17,25 @@
 *   This component helps present that moment clearly and peacefully.
 */
 
+function CurrentMystery({ selectedMystery, index }) {
+    const { t } = useTranslation();
 
-function CurrentMystery({ selectedMystery }) { 
     return (
         <div
             role="status"
             aria-live="polite"
             aria-atomic="true"
         >
-            {selectedMystery && <p>{selectedMystery}</p>}
+            <p className="sr-only">
+                {t("aria.currentMysteryProgress", {
+                    currentMystery: index
+                })}
+            </p>
+
+            {/* Visible text */}
+            <p>{selectedMystery}</p>
         </div>
-    )
+    );
 }
 
 export default CurrentMystery;

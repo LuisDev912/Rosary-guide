@@ -3,7 +3,8 @@
         "home": "Go to the home page",
         "rosary": "Go to the rosary praying page",
         "end": "Go to the final prayer page",
-        "info": "Go to the rosary information page"
+        "info": "Go to the rosary information page",
+        "currentMysteryProgress": "You are on mystery {{selectedMystery}} of 5"
     },
     "a11y":{
         "skipToContent": "Skip to main content"
