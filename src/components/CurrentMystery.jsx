@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Activity } from "react";
 
 /**
 * CurrentMystery.jsx
@@ -17,7 +18,7 @@ import { useTranslation } from "react-i18next";
 *   This component helps present that moment clearly and peacefully.
 */
 
-function CurrentMystery({ selectedMystery, index }) {
+function CurrentMystery({ selectedMystery, index, showFinishProgress }) {
     const { t } = useTranslation();
 
     return (
@@ -32,8 +33,13 @@ function CurrentMystery({ selectedMystery, index }) {
                 })}
             </p>
 
-            {/* Visible text */}
             <p>{selectedMystery}</p>
+
+            <Activity mode={showFinishProgress ? "visible" : "hidden"}>
+                <p className="sr-only">
+                    {t("aria.finishProgress")}
+                </p>
+            </Activity>
         </div>
     );
 }

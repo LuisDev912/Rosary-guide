@@ -4,7 +4,8 @@
         "rosary": "Ir a la página para rezar el Rosario",
         "end": "Ir a la página de la oración final",
         "info": "Ir a la página con información sobre el Rosario",
-        "currentMysteryProgress": "Estás en el misterio {{currentMystery}} de 5"
+        "currentMysteryProgress": "Estás en el misterio {{currentMystery}} de 5",
+        "finishProgress": "Has rezado los 5 misterios, ya puedes pasar a la oración final"
     },
     "a11y":{
         "skipToContent": "Saltar al contenido principal"

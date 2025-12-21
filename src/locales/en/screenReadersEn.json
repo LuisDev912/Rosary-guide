@@ -4,7 +4,8 @@
         "rosary": "Go to the rosary praying page",
         "end": "Go to the final prayer page",
         "info": "Go to the rosary information page",
-        "currentMysteryProgress": "You are on mystery {{selectedMystery}} of 5"
+        "currentMysteryProgress": "You are on mystery {{selectedMystery}} of 5",
+        "finishProgress": "You have prayed all 5 mysteries, you can now proceed to the final prayer"
     },
     "a11y":{
         "skipToContent": "Skip to main content"
