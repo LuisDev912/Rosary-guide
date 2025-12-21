@@ -46,26 +46,34 @@ function RosaryRunner({ mysteries }) {
 
             <div className={Styles.controlButtons}>
                 <div className={Styles.navigateButtons}>
-                    <button className="previous-mystery"
+                    <button
+                        className="previous-mystery"
                         onClick={() => goPrevious()}
                         disabled={currentMysteryIndex === 0}
+                        aria-disabled={currentMysteryIndex === 0}
                     >
                     <Previous />
                         {t("buttons.previousMystery")}
                     </button>
 
-                    <button className="next-mystery"
+                    <button
+                        className="next-mystery"
                         onClick={() => goNext()}
-                        disabled={currentMysteryIndex === 4}>
+                        disabled={currentMysteryIndex === 4}
+                        aria-disabled={currentMysteryIndex === 4}
+                    >
                         {t("buttons.nextMystery")}
                         <Next />
                     </button>
                 </div>
 
                 <div className="end-button">
-                    <button className="end-Rosary"
+                    <button
+                        className="end-Rosary"
                         disabled={currentMysteryIndex !== 4}
-                        onClick={() => navigate('/Rosary/end')}>
+                        aria-disabled={currentMysteryIndex !== 4}
+                        onClick={() => navigate('/Rosary/end')}
+                    >
                         {t("buttons.endRosary")}
                     </button>
                 </div>

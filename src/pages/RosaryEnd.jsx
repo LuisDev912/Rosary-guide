@@ -52,6 +52,7 @@ function RosaryEnd() {
                         className="submit-prayer-btn"
                         type="submit"
                         disabled={!isValidPrayer}
+                        aria-disabled={!isValidPrayer}
                     >
                         {t("end.submitPrayer")}
                     </button>
