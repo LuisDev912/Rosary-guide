@@ -17,9 +17,15 @@
 
 
 function CurrentMystery({ selectedMystery }) { 
-    if (!selectedMystery) return null;
-
-    return <p>{selectedMystery}</p>;
+    return (
+        <div
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+        >
+            {selectedMystery && <p>{selectedMystery}</p>}
+        </div>
+    )
 }
 
 export default CurrentMystery;
