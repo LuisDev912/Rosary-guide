@@ -35,9 +35,8 @@ function RosaryEnd() {
 
             <section className="prayer-reminder">
                 <details className={Styles.reminder}>
+                    <summary>{t("end.finalPrayerReminder")}</summary>
                     <p>{t("prayers.hailHolyQueen.text")}</p>
-                    <summary style={{ fontWeight: '550'}}>{t("end.finalPrayerReminder")}
-                    </summary>
                 </details>
             </section>
 

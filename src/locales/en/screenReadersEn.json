@@ -5,7 +5,12 @@
         "end": "Go to the final prayer page",
         "info": "Go to the rosary information page",
         "currentMysteryProgress": "You are on mystery {{selectedMystery}} of 5",
-        "finishProgress": "You have prayed all 5 mysteries, you can now proceed to the final prayer"
+        "finishProgress": "You have prayed all 5 mysteries, you can now proceed to the final prayer",
+        "languages": {
+            "ES": "Change language to Spanish",
+            "EN": "Change language to English",
+            "nextLanguage": "You will change the language to {{language}}"
+        }
     },
     "a11y":{
         "skipToContent": "Skip to main content"
