@@ -38,7 +38,8 @@
         "prayerInputPlaceholder": "Enter your prayer",
         "finalPrayerReminder": "Don't forget to finish with the Hail Holy Queen:",
         "submitPrayer": "Submit prayer",
-        "yourPrayer": "Your prayer:"
+        "yourPrayer": "Your prayer:",
+        "prayerLabel": "Type your prayer here"
     },
     "info": {
         "title": "What is the Holy Rosary?",

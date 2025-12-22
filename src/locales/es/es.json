@@ -38,7 +38,8 @@
         "prayerInputPlaceholder": "Ingresa tu oración",
         "finalPrayerReminder": "No olvides terminar con el Salve:",
         "submitPrayer": "Guardar oración",
-        "yourPrayer": "Tu oración:"
+        "yourPrayer": "Tu oración:",
+        "prayerLabel": "Escribe tu oración aquí"
     },
     "info": {
         "title": "¿Qué es el Santo Rosario?",
