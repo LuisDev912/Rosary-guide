@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Activity, useState } from "react";
+import { Activity, useState, useRef, use, useEffect } from "react";
 import Styles from '../styles/page-styles/EndPage.module.css'
 
 /**
@@ -17,7 +17,12 @@ function RosaryEnd() {
     const { t } = useTranslation();
     const [prayer, setPrayer] = useState("");
     const [isSubmitted, setSubmitted] = useState(false);
+    const userPrayerRef = useRef(null);
     const isValidPrayer = prayer.trim().length > 0;
+
+    useEffect(() => {
+        if (isSubmitted && userPrayerRef.current) userPrayerRef.current.focus();
+    }, [isSubmitted])
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -63,15 +68,15 @@ function RosaryEnd() {
 
                 <Activity mode={isSubmitted ? 'visible' : 'hidden'}>
                     <div
+                        tabIndex='-1'
+                        ref={userPrayerRef}
                         className="submitted-prayer"
-                        role="status"
                         aria-live="polite"
                     >
                         <h3>{t("end.yourPrayer")}</h3>
                         <p>{prayer}</p>
                     </div>
                 </Activity>
-
             </section>
         </>
     );
