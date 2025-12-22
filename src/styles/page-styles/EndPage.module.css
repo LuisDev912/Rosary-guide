@@ -26,7 +26,7 @@
     flex-direction: column;
 }
 
-#customPrayerInput{
+.customPrayerInput{
     font-family: inherit;
     border-radius: var(--radius-md);
     border: 2px solid var(--color-accent);
@@ -38,7 +38,7 @@
     padding: var(--space-xs) var(--space-xl);
 }
 
-#customPrayerInput:focus{
+.customPrayerInput:focus{
     outline: none;
     box-shadow: var(--shadow-medium);
 }

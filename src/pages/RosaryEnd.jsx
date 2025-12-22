@@ -40,9 +40,12 @@ function RosaryEnd() {
                 <h2 className="heading-secondary">{t("end.prayerQuestion")}</h2>
 
                 <form onSubmit={handleSubmit}>
-                    <textarea
-                        rows="5" cols="20"
-                        id={Styles.customPrayerInput}
+                    <label htmlFor="custom-prayer" className="sr-only">
+                        {t("end.prayerLabel")} {/* I'll add this translation later */}
+                    </label>
+                    <input
+                        id="custom-prayer"
+                        className={Styles.customPrayerInput}
                         placeholder={t("end.prayerInputPlaceholder")}
                         value={prayer}
                         onChange={(e) => setPrayer(e.target.value)}
@@ -59,7 +62,11 @@ function RosaryEnd() {
                 </form>
 
                 <Activity mode={isSubmitted ? 'visible' : 'hidden'}>
-                    <div className="submitted-prayer">
+                    <div
+                        className="submitted-prayer"
+                        role="status"
+                        aria-live="polite"
+                    >
                         <h3>{t("end.yourPrayer")}</h3>
                         <p>{prayer}</p>
                     </div>
