@@ -84,7 +84,7 @@ button {
   border: none;
   cursor: pointer;
   background-color: var(--color-accent);
-  color: var(--color-bg);
+  color: #1A1A1A;
   transition: var(--transition-fast);
 }
 
