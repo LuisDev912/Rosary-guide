@@ -34,8 +34,9 @@
     font-size: var(--font-size-md);
     margin: 10px 0;
     transition: var(--transition-fast);
-    padding: var(--space-xxs) var(--space-md);
     padding: var(--space-xs) var(--space-xl);
+    background-color: var(--input-background);
+    color: var(--color-text)
 }
 
 .customPrayerInput:focus{

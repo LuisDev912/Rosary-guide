@@ -10,6 +10,8 @@
   /* Primary text */
   --color-text-secondary: #444444;
   --color-card-bg: #FFFFFF;
+  /* Input bg */
+  --input-background: #e0e0e0;
 
   /* ----- Spacing System ----- */
   --space-xxs: 0.25rem;
@@ -58,6 +60,8 @@
     --color-text: #F5F5F5;
     --color-text-secondary: #CCCCCC;
     --color-card-bg: #1C2635;
+    /* input bg */
+    --input-background: #2A3847;
   }
 }
 
