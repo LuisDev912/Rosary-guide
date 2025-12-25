@@ -36,7 +36,7 @@ function RosaryEnd() {
             <section className="prayer-reminder">
                 <details className={Styles.reminder}>
                     <summary>{t("end.finalPrayerReminder")}</summary>
-                    <p>{t("prayers.hailHolyQueen.text")}</p>
+                    <p className="italic">{t("prayers.hailHolyQueen.text")}</p>
                 </details>
             </section>
 
@@ -73,7 +73,7 @@ function RosaryEnd() {
                         aria-live="polite"
                     >
                         <h3>{t("end.yourPrayer")}</h3>
-                        <p>{prayer}</p>
+                        <p className="italic">{prayer}</p>
                     </div>
                 </Activity>
             </section>

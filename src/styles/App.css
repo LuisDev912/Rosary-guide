@@ -152,9 +152,14 @@ p {
   margin-bottom: var(--space-sm);
 }
 
-#small-text {
+.small-text {
   font-size: var(--font-size-sm);
   color: var(--text-muted);
+}
+
+.italic {
+  font-style: italic;
+  color: var(--text-secondary);
 }
 
 

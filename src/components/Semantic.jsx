@@ -7,11 +7,17 @@ export function Footer() {
     const { t } = useTranslation();
     return (
         <footer>
-            <p className={SemanticStyles.versicle}>{t("labels.finalVersicle")}</p>
+            <p className='italic'>{t("labels.finalVersicle")}</p>
 
             <div className={SemanticStyles.footerInfo}>
                 © {new Date().getFullYear()} {t("labels.footerMessage")} — Luis Calleja <br />
-                <small className={SemanticStyles.version}>v1.3.0</small>
+                
+                <small 
+                    className='small-text' 
+                    style={{opacity: '0.7'}}
+                >
+                    v1.3.0
+                </small>
             </div>
         </footer>
     );

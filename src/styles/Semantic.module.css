@@ -71,18 +71,8 @@ footer {
 
 /* Footer's text */
 
-.versicle{
-    font-style: italic;
-    margin-bottom: var(--space-sm);
-}
-
 .footerInfo{
     margin-bottom: var(--space-xs);
-}
-
-.version{
-    font-size: var(--font-size-sm);
-    opacity: 0.7;
 }
 
 /* --- footer's media query */
@@ -91,10 +81,5 @@ footer {
     footer {
         padding: var(--space-xl);
         font-size: var(--font-size-md);
-    }
-
-    .versicle {
-        max-width: 600px;
-        margin: 0 auto var(--space-md);
     }
 }
