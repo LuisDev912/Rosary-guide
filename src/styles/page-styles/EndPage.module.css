@@ -3,7 +3,7 @@
 .reminder {
     cursor:pointer;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: 0.4s ease-out;
     max-height: 3rem;
 }
 

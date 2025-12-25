@@ -39,6 +39,18 @@
   --font-size-xl: 1.5rem;
   --font-size-xxl: 2rem;
 
+  /* ----- Text roles ----- */
+  --text-primary: #1A1A1A;
+  --text-secondary: #3A3A3A;
+  --text-muted: #6B6B6B;
+
+  /* ----- Font weights ----- */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+
   /* ----- Shadows ----- */
   --shadow-soft: 0 1px 4px rgba(0, 0, 0, 0.1);
   --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.623);
@@ -62,6 +74,11 @@
     --color-card-bg: #1C2635;
     /* input bg */
     --input-background: #2A3847;
+
+    /* Text */
+    --text-primary: #EDEDED;
+    --text-secondary: #CFCFCF;
+    --text-muted: #9CA3AF;
   }
 }
 
