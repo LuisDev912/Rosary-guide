@@ -1,6 +1,6 @@
 .anchor{
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
     transition: var(--transition-fast);
 }
 
@@ -9,11 +9,13 @@
 }
 
 .anchor:active{
-    color: var(--color-accent)
+    color: var(--color-accent);
+    opacity: .85;
 }
 
-.active{
-    color: var(--color-accent);
-    font-weight: 700;
-    text-decoration: underline;
+.active {
+  color: var(--color-accent);
+  font-weight: var(--weight-semibold);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
