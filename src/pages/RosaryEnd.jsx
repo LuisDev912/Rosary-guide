@@ -36,12 +36,12 @@ function RosaryEnd() {
             <section className="prayer-reminder">
                 <details className={Styles.reminder}>
                     <summary>{t("end.finalPrayerReminder")}</summary>
-                    <p className="italic">{t("prayers.hailHolyQueen.text")}</p>
+                    <p className="italic prose">{t("prayers.hailHolyQueen.text")}</p>
                 </details>
             </section>
 
             <section className={Styles.customPrayer}>
-                <h2 className="heading-secondary">{t("end.prayerQuestion")}</h2>
+                <h2 className="heading-secondary text-ui">{t("end.prayerQuestion")}</h2>
 
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="custom-prayer" className="sr-only">

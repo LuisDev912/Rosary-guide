@@ -10,7 +10,11 @@
 .navigationSection{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
     gap: 15px;
+}
+
+.navigationSection button{
+    max-height: 34.66px;
 }
