@@ -103,6 +103,7 @@ button {
   cursor: pointer;
   background-color: var(--color-accent);
   color: #1A1A1A;
+  font-weight: var(--weight-semibold);
   transition: var(--transition-fast);
 }
 
