@@ -22,7 +22,13 @@ function Prayer({ title, text }) {
 
             {/* supports line breaks */}
             {text.split("\n").map((line, idx) => (
-                <p key={idx} style={{textAlign: 'center'}}>{line}</p>
+                <p 
+                    key={idx} 
+                    style={{textAlign: 'center'}}
+                    className="italic"
+                >
+                    {line}
+                </p>
             ))}
         </section>
     );

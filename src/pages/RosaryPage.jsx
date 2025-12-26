@@ -4,7 +4,6 @@ import Steps from "../components/Steps";
 import MysteryGroup from "../components/MysteryGroup";
 import RosaryRunner from "../components/RosaryRunner";
 import PrayersList from "../components/PrayersList";
-import Styles from '../styles/page-styles/RosaryPrayer.module.css'
 
 /**
 * RosaryPage.jsx
