@@ -25,7 +25,7 @@ function Prayer({ title, text }) {
                 <p 
                     key={idx} 
                     style={{textAlign: 'center'}}
-                    className="italic"
+                    className="italic prose"
                 >
                     {line}
                 </p>

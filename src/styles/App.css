@@ -163,6 +163,10 @@ p {
   color: var(--text-secondary);
 }
 
+.prose {
+  max-width: 65ch;
+  line-height: 1.7;
+}
 
 /* --- main content --- */
 
