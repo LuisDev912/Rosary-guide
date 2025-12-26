@@ -163,10 +163,25 @@ p {
   color: var(--text-secondary);
 }
 
+/* micro typogtaphy */
+
 .prose {
   max-width: 65ch;
   line-height: 1.7;
 }
+
+.text-body {
+  line-height: 1.65;
+}
+
+.text-ui {
+  line-height: 1.4;
+}
+
+section > * + * {
+  margin-top: var(--space-sm);
+}
+
 
 /* --- main content --- */
 
