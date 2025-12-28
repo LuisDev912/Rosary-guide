@@ -15,6 +15,7 @@ function MainLayout() {
     useEffect(() => {
         if (mainRef.current) mainRef.current.focus();
     }, [location.pathname])
+    
     return (
         <>
             <Header />
