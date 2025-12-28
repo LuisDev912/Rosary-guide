@@ -16,7 +16,7 @@ export function Footer() {
                     className='small-text' 
                     style={{opacity: '0.7'}}
                 >
-                    v1.3.1
+                    v1.4.0
                 </small>
             </div>
         </footer>
