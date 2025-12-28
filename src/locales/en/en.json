@@ -11,7 +11,10 @@
     "buttons": {
         "nextMystery": "Next Mystery",
         "previousMystery": "Previous Mystery",
-        "togglePrayers": "Show/Hide Prayers",
+        "togglePrayers": {
+            "active": "Hide prayers",
+            "hidden": "Show prayers"
+        },
         "endRosary": "Finish the Rosary",
         "startRosary": "Start praying the Rosary",
         "goBack": "Back to Home"

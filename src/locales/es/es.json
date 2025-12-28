@@ -11,7 +11,10 @@
     "buttons": {
         "nextMystery": "Siguiente Misterio",
         "previousMystery": "Misterio Anterior",
-        "togglePrayers": "Mostrar/Ocultar Oraciones",
+        "togglePrayers": {
+            "active": "Ocultar oraciones",
+            "hidden": "Mostrar oraciones"
+        },
         "endRosary": "Finalizar el Rosario",
         "startRosary": "Empezar a rezar el Rosario",
         "goBack": "Volver al Inicio"
