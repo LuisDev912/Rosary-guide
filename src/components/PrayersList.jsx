@@ -33,7 +33,12 @@ function PrayerList() {
                     display: 'flex',
                     justifyContent: 'center'
                 }}>
-                <button onClick={handleToggle}>{t(showAll ? 'buttons.togglePrayers.active' : 'buttons.togglePrayers.hidden')}</button>
+                <button onClick={handleToggle}>{t(
+                    showAll 
+                    ? 'buttons.togglePrayers.active' 
+                    : 'buttons.togglePrayers.hidden')
+                    }
+                    </button>
             </div>
 
             <Activity mode={showAll ? "visible" : "hidden"}>

@@ -64,5 +64,11 @@
                 "Domingo: Misterios Gloriosos"
             ]
         }
+    },
+    "seo":{
+        "home": {
+            "title": "Rosario - Reza el Santo Rosario online",
+            "description": "Reza el Santo Rosario online de manera guiada y con oración final."
+        }
     }
 }

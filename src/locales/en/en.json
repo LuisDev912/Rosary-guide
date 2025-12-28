@@ -64,5 +64,11 @@
                 "Sunday: Glorious Mysteries"
             ]
         }
+    },
+    "seo":{
+        "home": {
+            "title": "Rosario - Pray the Holy Rosary online",
+            "description": "Pray the Holy Rosary online with guided mysteries and final prayer."
+        }
     }
 }
