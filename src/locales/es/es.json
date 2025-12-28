@@ -65,10 +65,22 @@
             ]
         }
     },
-    "seo":{
+    "seo": {
         "home": {
-            "title": "Rosario - Reza el Santo Rosario online",
-            "description": "Reza el Santo Rosario online de manera guiada y con oración final."
+            "title": "Santo Rosario online | Reza el Rosario paso a paso",
+            "description": "Reza el Santo Rosario online de forma guiada, con información y oración final."
+        },
+        "prayingPage": {
+            "title": "Rezar el Santo Rosario paso a paso | Guía completa",
+            "description": "Guía completa para rezar el Santo Rosario paso a paso con oraciones tradicionales."
+        },
+        "endPage": {
+            "title": "Oración final del Rosario | Personaliza tu oración",
+            "description": "Crea tu oración final personalizada y reza el Salve de manera guiada."
+        },
+        "infoPage": {
+            "title": "¿Qué es el Santo Rosario? | Historia y cómo rezarlo",
+            "description": "Aprende qué es el Santo Rosario, su significado, su historia y cómo rezarlo correctamente."
         }
     }
 }

@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Activity, useState, useRef, use, useEffect } from "react";
 import Styles from '../styles/page-styles/EndPage.module.css'
+import { useSEO } from "../hooks/useSeo";
 
 /**
 * ./src/pages/RosaryEnd.jsx
@@ -29,6 +30,12 @@ function RosaryEnd() {
         if (!isValidPrayer) return;
         setSubmitted(true)
     }
+
+    useSEO({
+        titleKey: "seo.endPage.title",
+        descriptionKey: "seo.endPage.description",
+    });
+
     return (
         <>
             <h1 className="heading-primary">{t("end.title")}</h1>

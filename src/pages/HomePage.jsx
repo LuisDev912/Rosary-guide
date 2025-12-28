@@ -5,7 +5,7 @@ import { useSEO } from "../hooks/useSeo.jsx";
 export default function HomePage() {
     const { t } = useTranslation();
 
-     useSEO({
+    useSEO({
         titleKey: "seo.home.title",
         descriptionKey: "seo.home.description",
     });

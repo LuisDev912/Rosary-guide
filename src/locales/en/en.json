@@ -65,10 +65,22 @@
             ]
         }
     },
-    "seo":{
+    "seo": {
         "home": {
-            "title": "Rosary - Pray the Holy Rosary online",
-            "description": "Pray the Holy Rosary online with guided mysteries and final prayer."
+            "title": "Online Holy Rosary | Pray the Rosary Step by Step",
+            "description": "Pray the Holy Rosary online with guided meditations and a final prayer."
+        },
+        "prayingPage": {
+            "title": "How to Pray the Holy Rosary | Step-by-Step Guide",
+            "description": "A complete step-by-step guide to praying the Holy Rosary with traditional prayers."
+        },
+        "endPage": {
+            "title": "Final Prayer of the Rosary | Create Your Own Prayer",
+            "description": "Create your own final prayer and pray the Hail Holy Queen with guidance."
+        },
+        "infoPage": {
+            "title": "What Is the Holy Rosary? | Meaning and How to Pray It",
+            "description": "Learn what the Holy Rosary is, its meaning, its history, and how to pray it properly."
         }
     }
 }

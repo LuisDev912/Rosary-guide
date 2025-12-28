@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useMemo } from "react";
+import { useSEO } from "../hooks/useSEO";
 import Steps from "../components/Steps";
 import MysteryGroup from "../components/MysteryGroup";
 import RosaryRunner from "../components/RosaryRunner";
@@ -28,6 +29,11 @@ import PrayersList from "../components/PrayersList";
 
 function RosaryPage() {
     const { t } = useTranslation();
+
+    useSEO({
+        titleKey: "seo.prayingPage.title",
+        descriptionKey: "seo.prayingPage.description",
+    });
 
     const MysteryDayByDay = {
         0: "glorious",

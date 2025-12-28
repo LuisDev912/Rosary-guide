@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router";
 import {HomeIcon} from '../assets/icons/HomeIcon.jsx'
+import {useSEO} from '../hooks/useSEO.jsx';
 import Styles from '../styles/page-styles/InfoPage.module.css'
 
 export default function RosaryInfoPage() {
@@ -8,6 +9,11 @@ export default function RosaryInfoPage() {
     const navigate = useNavigate();
 
     const days = t("info.days.list", {returnObjects: true})
+
+    useSEO({
+        titleKey: "seo.infoPage.title",
+        descriptionKey: "seo.infoPage.description",
+    });
 
     return (
         <>
