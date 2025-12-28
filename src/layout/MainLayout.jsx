@@ -4,9 +4,13 @@ import { useTranslation } from "react-i18next";
 import { useRef, useEffect } from "react";
 
 function MainLayout() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const mainRef = useRef(null);
     const location = useLocation();
+    
+    useEffect(() => {
+        document.documentElement.lang = i18n.language;
+    }, [i18n.language])
 
     useEffect(() => {
         if (mainRef.current) mainRef.current.focus();
