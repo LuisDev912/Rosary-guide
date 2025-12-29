@@ -27,7 +27,6 @@
     }, 
     "notFound": {
         "title": "Oops, parece que la página que estabas buscando no existe.",
-        "alternatives": "Aquí hay algunas alternativas:",
         "pages": [
             "Página principal",
             "Rezar el Rosario",

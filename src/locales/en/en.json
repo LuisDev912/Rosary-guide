@@ -27,7 +27,6 @@
     },
     "notFound": {
         "title": "Oops, it seems like the page you were looking for doesn't exist.",
-        "alternatives": "Here are some alternatives:",
         "pages": [
             "Main page",
             "Rosary page",
