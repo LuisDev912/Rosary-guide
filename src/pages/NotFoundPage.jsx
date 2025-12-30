@@ -1,8 +1,10 @@
 import {HomeIcon} from '../assets/icons/HomeIcon.jsx';
 import { useTranslation } from "react-i18next";
+import { useNavigate } from 'react-router';
 
 export default function NotFoundPage() {
     const { t } = useTranslation();
+    const navigate = useNavigate();
 
     return (
         <section
@@ -12,10 +14,13 @@ export default function NotFoundPage() {
                     flexDirection: 'column'
                 }}
             >
-            <h1 className="heading-primary">{t("notFound.title")}</h1>
+            <h1 
+                className="heading-primary"
+            >
+                {t("notFound.title")}
+            </h1>
 
             <button
-                
                 onClick={() => navigate('/')}>
                 {t("buttons.goBack")}
                 <HomeIcon />
