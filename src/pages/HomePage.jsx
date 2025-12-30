@@ -1,14 +1,20 @@
 import { useTranslation } from "react-i18next";
 import { NavLink } from "../components/NavLink.jsx";
-import { useSEO } from "../hooks/useSeo.jsx";
+import { useSEO } from "../hooks/useSEO.jsx";
 
 export default function HomePage() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     useSEO({
-        titleKey: "seo.home.title",
-        descriptionKey: "seo.home.description",
+        title: "seo.home.title",
+        description: "seo.home.description",
+        og: {
+            title: "seo.home.title",
+            description: "seo.home.description",
+            locale: i18n.language === "es" ? "es_AR" : "en_US",
+        },
     });
+
 
     return (
         <section>

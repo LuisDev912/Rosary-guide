@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useMemo } from "react";
-import { useSEO } from "../hooks/useSEO";
+import { useSEO } from "../hooks/useSEO.jsx";
 import Steps from "../components/Steps";
 import MysteryGroup from "../components/MysteryGroup";
 import RosaryRunner from "../components/RosaryRunner";
