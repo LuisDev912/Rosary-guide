@@ -5,14 +5,19 @@ import { useSEO } from "../hooks/useSEO.jsx";
 import Styles from '../styles/page-styles/InfoPage.module.css'
 
 export default function RosaryInfoPage() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const navigate = useNavigate();
 
     const days = t("info.days.list", {returnObjects: true})
 
     useSEO({
-        titleKey: "seo.infoPage.title",
-        descriptionKey: "seo.infoPage.description",
+        title: "seo.home.title",
+        description: "seo.home.description",
+        og: {
+            title: "seo.home.title",
+            description: "seo.home.description",
+            locale: i18n.language === "es" ? "es_AR" : "en_US",
+        },
     });
 
     return (

@@ -15,7 +15,7 @@ import { useSEO } from "../hooks/useSEO.jsx";
 */
 
 function RosaryEnd() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [prayer, setPrayer] = useState("");
     const [isSubmitted, setSubmitted] = useState(false);
     const userPrayerRef = useRef(null);
@@ -32,8 +32,13 @@ function RosaryEnd() {
     }
 
     useSEO({
-        titleKey: "seo.endPage.title",
-        descriptionKey: "seo.endPage.description",
+        title: "seo.home.title",
+        description: "seo.home.description",
+        og: {
+            title: "seo.home.title",
+            description: "seo.home.description",
+            locale: i18n.language === "es" ? "es_AR" : "en_US",
+        },
     });
 
     return (

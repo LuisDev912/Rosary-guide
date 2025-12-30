@@ -28,11 +28,16 @@ import PrayersList from "../components/PrayersList";
 
 
 function RosaryPage() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     useSEO({
-        titleKey: "seo.prayingPage.title",
-        descriptionKey: "seo.prayingPage.description",
+        title: "seo.home.title",
+        description: "seo.home.description",
+        og: {
+            title: "seo.home.title",
+            description: "seo.home.description",
+            locale: i18n.language === "es" ? "es_AR" : "en_US",
+        },
     });
 
     const MysteryDayByDay = {
