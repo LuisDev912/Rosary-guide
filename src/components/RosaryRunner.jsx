@@ -1,8 +1,8 @@
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router";
-import { Next } from "../assets/icons/Next";
-import { Previous } from "../assets/icons/Previous";
+import { Next } from "../iconsJSX/Next";
+import { Previous } from "../iconsJSX/Previous";
 import CurrentMystery from "./CurrentMystery";
 import Styles from '../styles/page-styles/RosaryPrayer.module.css'
 

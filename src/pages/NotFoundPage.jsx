@@ -1,4 +1,4 @@
-import {HomeIcon} from '../assets/icons/HomeIcon.jsx';
+import {HomeIcon} from '../iconsJSX/HomeIcon.jsx';
 import { useTranslation } from "react-i18next";
 import { useNavigate } from 'react-router';
 

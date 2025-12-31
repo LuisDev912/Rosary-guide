@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Activity, useState, useRef, use, useEffect } from "react";
+import { Activity, useState, useRef, useEffect } from "react";
 import Styles from '../styles/page-styles/EndPage.module.css'
 import { useSEO } from "../hooks/useSEO.jsx";
 
