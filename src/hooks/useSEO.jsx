@@ -1,11 +1,15 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-function setMeta({ name, property, content }) {
+function setMeta({ name, property, content, noIndex }) {
   let meta;
 
   if (name) {
     meta = document.querySelector(`meta[name="${name}"]`);
+  }
+
+  if(noIndex){
+    meta = document.querySelector(`meta[property="${property}"]`)
   }
 
   if (property) {
@@ -22,7 +26,7 @@ function setMeta({ name, property, content }) {
   meta.setAttribute("content", content);
 }
 
-export function useSEO({ title, description, og }) {
+export function useSEO({ title, description, og, index }) {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -35,6 +39,13 @@ export function useSEO({ title, description, og }) {
         name: "description",
         content: t(description),
       });
+    }
+
+    if (index){
+      setMeta({
+        name: 'robots',
+        content: 'noindex, follow'
+      })
     }
 
     if (og?.title) {

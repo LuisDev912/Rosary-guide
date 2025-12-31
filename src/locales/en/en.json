@@ -80,6 +80,10 @@
         "infoPage": {
             "title": "What Is the Holy Rosary? | Meaning and How to Pray It",
             "description": "Learn what the Holy Rosary is, its meaning, its history, and how to pray it properly."
+        },
+        "notFoundPage": {
+            "title": "404 - Page not found | Rosary App",
+            "description": "The page you are looking for does not exist. Return to the home page to continue praying the Rosary."
         }
     }
 }

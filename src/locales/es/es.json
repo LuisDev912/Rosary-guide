@@ -80,6 +80,10 @@
         "infoPage": {
             "title": "¿Qué es el Santo Rosario? | Historia y cómo rezarlo",
             "description": "Aprende qué es el Santo Rosario, su significado, su historia y cómo rezarlo correctamente."
+        },
+        "notFoundPage": {
+            "title": "404 - Página no encontrada | Rosary App",
+            "description": "La página que estabas buscando no existe. Vuelve a la página principal para seguir rezando el Rosario."
         }
     }
 }
