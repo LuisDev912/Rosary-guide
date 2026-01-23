@@ -7,6 +7,8 @@ function MainLayout() {
     const { t, i18n } = useTranslation();
     const mainRef = useRef(null);
     const location = useLocation();
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const icon = document.querySelector(`link[rel='icon']`)
     
     useEffect(() => {
         document.documentElement.lang = i18n.language;
@@ -15,6 +17,11 @@ function MainLayout() {
     useEffect(() => {
         if (mainRef.current) mainRef.current.focus();
     }, [location.pathname])
+
+    useEffect(() => {
+        isDarkMode ? icon.setAttribute('href', '../../public/rosary.svg') : icon.setAttribute('href', '../../public/Rosary-dark-mode.svg')
+    }, [])
+
     
     return (
         <>
