@@ -57,7 +57,7 @@ function RosaryEnd() {
 
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="custom-prayer" className="sr-only">
-                        {t("end.prayerLabel")} {/* I'll add this translation later */}
+                        {t("end.prayerLabel")}
                     </label>
                     <input
                         id="custom-prayer"

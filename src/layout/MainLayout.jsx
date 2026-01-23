@@ -19,7 +19,7 @@ function MainLayout() {
     }, [location.pathname])
 
     useEffect(() => {
-        isDarkMode ? icon.setAttribute('href', '../../public/Rosary-two.svg') : icon.setAttribute('href', '../../public/Rosary-dark-mode.svg')
+        isDarkMode ? icon.setAttribute('href', '../../Rosary-two.svg') : icon.setAttribute('href', '../../Rosary-dark-mode.svg')
     }, [])
 
     
