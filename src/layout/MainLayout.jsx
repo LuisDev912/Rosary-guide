@@ -19,8 +19,11 @@ function MainLayout() {
     }, [location.pathname])
 
     useEffect(() => {
-        isDarkMode ? icon.setAttribute('href', '../../Rosary-two.svg') : icon.setAttribute('href', '../../Rosary-dark-mode.svg')
-    }, [])
+        isDarkMode
+            ? icon.setAttribute('href', '/Rosary-two.svg')
+            : icon.setAttribute('href', '/Rosary-dark-mode.svg')
+            // use './' paths instead of '../../' as the public folder is in the root
+    }, []);
 
     
     return (
