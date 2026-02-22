@@ -153,6 +153,7 @@ p {
   color: var(--text-primary);
   font-size: var(--font-size-md);
   margin-bottom: var(--space-sm);
+  margin: 7.5px;
 }
 
 .small-text {
@@ -165,7 +166,7 @@ p {
   color: var(--text-secondary);
 }
 
-/* micro typogtaphy */
+/* micro typography */
 
 .prose {
   max-width: 65ch;

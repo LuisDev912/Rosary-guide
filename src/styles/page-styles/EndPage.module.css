@@ -5,6 +5,7 @@
     overflow: hidden;
     transition: 0.4s ease-out;
     max-height: 3rem;
+    margin: 7.5px;
 }
 
 .reminder:open {
