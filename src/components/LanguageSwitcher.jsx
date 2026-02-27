@@ -42,13 +42,13 @@ function LanguageSwitcher() {
                 </button>
 
                 <button
+                    className="mt-5px"
                     onClick={() => changeLang("en")}
                     aria-label={t("aria.languages.nextLanguage", {
                         language: "English"
                     })}
                     disabled={i18n.language === "en"}
                     aria-disabled={i18n.language === "en"}
-                    style={{ marginTop: "5px" }}
                 >
                     EN
                 </button>
