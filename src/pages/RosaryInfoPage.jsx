@@ -24,16 +24,16 @@ export default function RosaryInfoPage() {
         <>
             <section className="intro-section">
                 <h1 className="heading-primary">{t("info.title")}</h1>
-                <p>{t("info.intro")}</p>
+                <p className="prose">{t("info.intro")}</p>
             </section>
 
             <section className={Styles.explanationSection}>
                 <div className="structure-intro">
                     <h2 className="heading-secondary">{t("info.structure.title")}</h2>
-                    <p>{t("info.structure.text")}</p>
+                    <p className="prose">{t("info.structure.text")}</p>
                 </div>
 
-                <p>{t("info.mysteriesExplanation")}</p>
+                <p className="prose">{t("info.mysteriesExplanation")}</p>
                 <p className="heading-tertiary">{t("info.days.title")}</p>
                 <ol>
                     {days.map((day, index) => (

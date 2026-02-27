@@ -24,7 +24,6 @@ function Prayer({ title, text }) {
             {text.split("\n").map((line, idx) => (
                 <p 
                     key={idx} 
-                    style={{textAlign: 'center'}}
                     className="italic prose"
                 >
                     {line}

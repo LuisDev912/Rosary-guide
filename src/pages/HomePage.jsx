@@ -22,10 +22,7 @@ export default function HomePage() {
             <h2 className="heading-secondary">{t("home.subtitle")}</h2>
             <p>{t("overview.intro")}</p>
 
-            <div className="navigationLinks" style={{
-                display: 'flex', 
-                justifyContent: 'space-evenly'
-            }}>
+            <div className="navigation-links flex justify-evenly">
                 <NavLink to="/Rosary" className="start-link">
                     {t("home.startButton")}
                 </NavLink>

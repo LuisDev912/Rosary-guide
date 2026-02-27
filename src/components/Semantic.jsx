@@ -10,11 +10,10 @@ export function Footer() {
             <p className='italic'>{t("labels.finalVersicle")}</p>
 
             <div className={SemanticStyles.footerInfo}>
-                © {new Date().getFullYear()} {t("labels.footerMessage")} — Luis Calleja <br />
+                &copy; {new Date().getFullYear()} {t("labels.footerMessage")} — Luis Calleja <br />
                 
                 <small 
-                    className='small-text' 
-                    style={{opacity: '0.7'}}
+                    className='small-text opacity-text'
                 >
                     v1.4.1
                 </small>

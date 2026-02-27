@@ -28,11 +28,7 @@ function PrayerList() {
         <>
             <h2 className="heading-secondary">{t("prayers.title")}</h2>
             <div
-                className="toggle-list"
-                style={{
-                    display: 'flex',
-                    justifyContent: 'center'
-                }}>
+                className="toggle-list flex justify-center">
                 <button onClick={handleToggle}>{t(
                     showAll 
                     ? 'buttons.togglePrayers.active' 

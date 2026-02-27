@@ -19,13 +19,7 @@ export default function NotFoundPage() {
     });
 
     return (
-        <section
-            style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    flexDirection: 'column'
-                }}
-            >
+        <section className='flex justify-center flex-column'>
             <h1 
                 className="heading-primary"
             >

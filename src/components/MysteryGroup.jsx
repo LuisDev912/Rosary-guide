@@ -20,7 +20,7 @@ function MysteryGroup({title, items}) {
     return (
         <>
             <h3 className="heading-tertiary">{t(title)}</h3>
-            <div className="MysteriesGroup">
+            <div className="Mysteries-group">
                 <ol>
                     
                     {items?.map((item, index) => (
