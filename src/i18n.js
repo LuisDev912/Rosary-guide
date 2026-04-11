@@ -27,7 +27,7 @@ i18n
         },
 
         // Starts with Spanish
-        lng: "es",
+        lng: localStorage.getItem("language") || "en",
 
         // Supports these languages
         supportedLngs: ["en", "es"],

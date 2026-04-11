@@ -11,6 +11,8 @@ function LanguageSwitcher() {
 
         i18n.changeLanguage(lang);
 
+        localStorage.setItem("language", lang);
+
         setAnnouncement(
             t("aria.languages.nextLanguage", {
                 language: lang === 'es' ? "Spanish" : "English"
